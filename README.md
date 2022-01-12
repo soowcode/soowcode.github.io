@@ -1,4 +1,4 @@
-<h1 align="center">Bienvenue à SoowCode 👋 ensemble intallons ton environnement</h1>
+<h1 align="center">Bienvenue à SoowCode 👋</h1>
 <p>
   <a href="https://soowcode.github.io/" target="_blank">
     <img alt="SoowCode" src="https://img.shields.io/badge/website-yes-brightgreen.svg" />
@@ -8,7 +8,7 @@
 
 ### 🏠 [WEBSITE](https://soowcode.github.io/)
 
-
+Une petite explication sur comment lancer ce projet en local et faire des contributions, sache que tu es la bienvenue. Nous sommes ravie de t'avoir parmis nos contributors.
 #### Installation de l'environnement de travaille
 ```
 git clone git@github.com:soowcode/soowcode.github.io.git
