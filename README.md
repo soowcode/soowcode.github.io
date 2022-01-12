@@ -20,7 +20,7 @@ Puis install les packages necessaires pour le lancement du projet que vous trouv
  pip install -r requirements.txt  
 ```
 
-#### lancer le projet
+#### Lancer le projet
 
 Se deplacer dans le dossier du projet cloner et lancer:
 ```
@@ -28,3 +28,6 @@ mkdocs serve
 ```
 
 
+
+## Contributeurs
+![GitHub Contributors Image](https://contrib.rocks/image?repo=soowcode/soowcode.github.io)
