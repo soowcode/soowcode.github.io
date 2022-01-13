@@ -1,6 +1,10 @@
 site_name: SoowCode
 
-#nav:
-  #- Home: index.md
-  #- About: about.md
+# nav:
+#   - Home:
+#       - parler: index.md
+#       - pppp: index.md
+#       - uuuu: index.md
+
+#   - About: about.md
 theme: readthedocs
