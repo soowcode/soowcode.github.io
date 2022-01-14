@@ -28,4 +28,4 @@ Il faudrait lancer la commande en précisant le chemin du package
 ./node_modules/.bin/mes-packages
 ```
 
-<a href="https://docs.npmjs.com/about-npm"> plus d'information sur NPM</a>
+<a  style="text-decoration: underline; color:black"  href="https://docs.npmjs.com/about-npm"> plus d'information sur NPM</a>

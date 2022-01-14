@@ -5,5 +5,5 @@
 
 Alors je viens avec un nouveau concepte qui est très important dans les tests. C'est le "edge cases and happy path" deux termes contraires mais très iimportant. Nous les definirons dans la section qui est en bas et ainsi nous donerons un exemple de chacun.
 ## Edge cases
-
+Comming soon sorry for the delay 🥺
 ## Happy path

@@ -29,7 +29,7 @@ node --version
 <img src="../../img/node-version.png"   />
 ### Installe Expo CLI
 
-<p> J'ai decouvert ce framwork "expo" qui est magnifique, je vous mets le lien &#128073; <a href="https://docs.expo.dev/">EXPO</a> </p>
+<p> J'ai decouvert ce framwork "expo" qui est magnifique, je vous mets le lien &#128073; <a  style="text-decoration: underline; color:black"  href="https://docs.expo.dev/">EXPO</a> </p>
 ```
 npm install --global expo-cli
 
@@ -284,7 +284,7 @@ FlatList fait en sorte que lorsque nos informations sont sur le point d'apparaî
 
 Egalement si vous voulez afficher des séparateurs entre vos éléments, plusieurs colonnes, un chargement de défilement infini ou tout autre nombre d'autres fonctionnalités qu'il prend en charge immédiatement. 
 
-Code source: <a href="https://github.com/debrouillonsnous/React-native/tree/main"> 👉here</a>
+Code source: <a  style="text-decoration: underline; color:black" href="https://github.com/debrouillonsnous/React-native/tree/main"> 👉here</a>
 
 ---
 ## Navigation
@@ -305,7 +305,7 @@ sudo npm install @react-navigation/stack
 ----
 **Sources:**
 
-<a href="https://openclassrooms.com/fr/courses/4902061-developpez-une-application-mobile-react-native/4915721-manipulez-le-state">openClassRooms</a>
+<a  style="text-decoration: underline; color:black"  href="https://openclassrooms.com/fr/courses/4902061-developpez-une-application-mobile-react-native/4915721-manipulez-le-state">openClassRooms</a>
 
-<a href="https://reactnative.dev/docs/getting-started">React native doc</a>
+<a  style="text-decoration: underline; color:black"  href="https://reactnative.dev/docs/getting-started">React native doc</a>
 

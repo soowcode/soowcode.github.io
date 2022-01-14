@@ -8,6 +8,7 @@ function A(B) {
 }
 ```
 ## Exemple python
-
+Comming soon sorry for the delay 🥺
 
 # Fonction anonyme:
+Comming soon sorry for the delay 🥺

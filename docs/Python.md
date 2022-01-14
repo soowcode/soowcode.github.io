@@ -152,16 +152,16 @@ Exemple:
 ## Loops
 ```
 
->>> i = 0
->>> while i < 5:
-...     print("hi")
-...     i += 1
+> > > i = 0
+> > > while i < 5:
+> > > ... print("hi")
+> > > ... i += 1
 
 ```
 
 <img src="../../img/while.png" alt="drawing" style="width:50%; height:50%"/>
 
-Pour plus d'informations je vous invite de voir le site de<a href="https://www.pythoncheatsheet.org/"> python suivant</a>
+Pour plus d'informations je vous invite de voir le site de <a  style="text-decoration: underline; color:black" href="https://www.pythoncheatsheet.org/"> python suivant</a>
 ## Functions
 L'une des parties les plus importantes ce sont les fonctions, en gros en python tout est fonctions.
 Une fonction se comporte comme: donne moi à manger ceci et je te recrache celà.

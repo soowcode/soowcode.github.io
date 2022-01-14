@@ -111,7 +111,7 @@ Pour publier un message on utilise la commande mosquitto_pub et pour connaitre l
 Pour plus d'information voir [documentation](https://mosquitto.org/man/mosquitto_pub-1.html)
 
 
-**Exemple**, on se connecte au serveur -h localhost sur le Topic -t news/football et on publie le message -m j'ai gagné le ballon d'or
+**Exemple**: on se connecte au serveur -h localhost sur le Topic -t news/football et on publie le message -m j'ai gagné le ballon d'or.
 
 ```
 mosquitto_pub -h localhost -t news/football -m "jai gagné le ballon d'or!"

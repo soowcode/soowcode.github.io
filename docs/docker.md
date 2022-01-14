@@ -38,10 +38,10 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o 
 
 ```
 si vous n'avez pas curl installé alors faite le
-<a href="https://docs.docker.com/get-started/">ici</a>  
+<a  style="text-decoration: underline; color:black" href="https://docs.docker.com/get-started/">ici</a>  
 
 ### Exemple d'image
-Recupere une image de docker hub voici le liens où trouver <a href="https://www.docker.com/products/docker-hub"> la liste des images que vous pouvez recuperer les images</a>  
+Recupere une image de docker hub voici le liens où trouver <a style="text-decoration: underline; color:black" href="https://www.docker.com/products/docker-hub"> la liste des images que vous pouvez recuperer les images</a>  
 ```
 docker pull ubuntu:22.04
 ```
@@ -86,12 +86,12 @@ CMD ["flask", "run"]
 ```
 ### Docker-compose
 #### Installation
-Vous trouverez ici tout ce qu'il vous faut sur <a href="https://docs.docker.com/compose/gettingstarted/">  Docker-compose </a>
+Vous trouverez ici tout ce qu'il vous faut sur <a style="text-decoration: underline; color:black" href="https://docs.docker.com/compose/gettingstarted/">  Docker-compose </a>
 ```
  sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
 
-Appliquez les autorisations exécutables au binaire <a href="https://docs.docker.com/compose/install/"> ici la doc </a>
+Appliquez les autorisations exécutables au binaire <a style="text-decoration: underline; color:black"  href="https://docs.docker.com/compose/install/"> ici la doc </a>
 
 ```
 sudo chmod +x /usr/local/bin/docker-compose
@@ -150,6 +150,4 @@ services:
 
 Nous arrivons à la fin de notre tutorial, pour plus d'informations je vous recommande la documentation du Docker dont j'ai mis le liens en bas dans les ressources. 
 
-**Sources**:
-
-<a href="https://dockerlabs.collabnix.com/docker/cheatsheet/">Docker cheat sheet</a>
+**Sources**: <a style="text-decoration: underline; color:black"  href="https://dockerlabs.collabnix.com/docker/cheatsheet/">Docker cheat sheet</a>

@@ -31,6 +31,4 @@ ab -c 100 -n 500 -r https://mon-site.com/
 
 Dans notre cas, la requête fera simultanément 100 requêtes/seconde et en fera au total 500.
 
-**source**:
-
-<a href=" https://ourcodeworld.com/articles/read/957/how-to-run-a-stress-test-to-your-apache-server-in-ubuntu-18-04">plus d'informations</a>
+**source**: <a style="text-decoration: underline; color:black" href=" https://ourcodeworld.com/articles/read/957/how-to-run-a-stress-test-to-your-apache-server-in-ubuntu-18-04">Plus d'informations here</a>
