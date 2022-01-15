@@ -25,7 +25,7 @@ Pour faire tourner une database MySQL dans un conteneur nous allons creer un doc
 <img src="../../img/thinking-boy.gif" alt="drawing" style="width:30%; height:30%"/>
 <p> Hummm, comment le faire???</p>
 </div>
-Ahhh mais c'est simple, je crée un fichier "docker compose.Yml " dans mon folder et je mets ceci dedans.
+Ahhh mais c'est simple, je crée un fichier "docker compose.yml " dans mon folder et je mets ceci dedans.
 
 ```yml
 version: "3.9"
@@ -56,7 +56,7 @@ Ne vous découragerez pas je vous explique
 
 - Le "docker exec" exécute une commande dans un conteneur en cours d'exécution.
 - Le "-it" signifie fais le en mode interactive
-- Le "db-mysql" est nom du contenaire
+- Le "db-mysql" est nom du conteneur
 - Le "bash" à la fin signifie qu'on veut exécuter "db-mysql" en mode bash
 
 > Sachez que si on utilisait "docker-compose exec" on allait utiliser le nom du service, car docker-compose manipule les services tandisque docker manipule les containers.
@@ -129,6 +129,6 @@ environment:
 
 ## Conclusion
 
-Si vous ne comprenez rien je vous comprendrais 😁, je vous invite donc de voir <a style="text-decoration: underline; color:black" href="https://docs.docker.com/compose/gettingstarted/">ce article sur docker-compose.</a>  
-Car, ceci n'est qu'une introduction au MySQL en utilisant les containers, pour plus d'informations visitez le site <a style="text-decoration: underline; color:black"  href="https://hub.docker.com/_/mysql?tab=description"> docker-hub </a> ou sur le site de MySQL Server <a style="text-decoration: underline; color:black" href="https://www.mysql.com/">www.mysql.com </a>.
+Nous arrivons à la fin de notre tuto happy!!😁, je vous invite donc de voir <a style="text-decoration: underline; color:black" href="https://docs.docker.com/compose/gettingstarted/">ce article sur docker-compose.</a>  
+Car, ceci n'est qu'une introduction au MySQL en utilisant les containers, pour plus d'informations visitez le site <a style="text-decoration: underline; color:black"  href="https://hub.docker.com/_/mysql?tab=description"> docker-hub </a> ou sur le site de MySQL <a style="text-decoration: underline; color:black" href="https://www.mysql.com/">www.mysql.com </a>.
 
