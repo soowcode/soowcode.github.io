@@ -2,7 +2,7 @@
 
 <img src="../../img/docker-mysql.png" alt="drawing" />
 
-
+## <p style="visibility: hidden;">Introduction</p>
   <li><i style=" margin-left:5%; font-weight:bold; font-size:28px">MySQL </i>
       <ul></br>
           <li>est un système de gestion de base de données relationnelle</li>
@@ -16,7 +16,7 @@
       </ul>
   </li>
 
-
+## <p style="visibility: hidden;">Fonctionnement</p>
 ### Docker-compose
 
 Pour faire tourner une database MySQL dans un conteneur nous allons creer un docker-compose.yml ou utiliser un docker run .
@@ -71,7 +71,7 @@ Mais, perso j'ai choisi d'installer sur vscode l'extension database qui me perme
 No kidding 😂 !! je ne me suis pas arreté la-bas.
 
 J'ai donc rajouté une interface web en utilisant adminer. Documentation juste 👉 <a style="text-decoration: underline; color:black" href="https://www.adminer.org/"> ici</a>.  
-Sinon voici un exemple de docker-compose de adminer. 
+Sinon voici un exemple de docker-compose de adminer.
 
 ```yml
 adminer:
@@ -83,24 +83,52 @@ adminer:
     - 8080:8080
 ```
 
-**NB:**  on rajoute "depends_on:" car on veut qu'il attende que MySQL finisse de démarrer avant de se lancer.  
-Vous trouverez plus d'info sur <a style="text-decoration: underline; color:black" href="https://hub.docker.com/_/mysql?tab=description"> docker hub</a>.
+**NB:** on rajoute "depends*on:" car on veut qu'il attende que MySQL finisse de démarrer avant de se lancer.  
+Vous trouverez plus d'info sur <a style="text-decoration: underline; color:black" href="https://hub.docker.com/*/mysql?tab=description"> docker hub</a>.
+
 ### Docker run
+
 ALors j'aime bien le docker-compose car ça nous évite de rappeler nos commandes oubien de recopier tout le temps la commande. C'est aussi un moyen rapide de faire des modifications.
 
 Mais c'est pas la seule methode à utiliser pour initialiser un container MySQL, il ya la simple commande `docker run`
+
 ```
 docker run --name=container_name  --restart on-failure -d image_name:tag
 ```
+
 En remplaçant les lettres par leurs valeurs on obtient un truc pareil:
 
 ```
-docker run -itd --name db-mysql -e MYSQL_ROOT_PASSWORD=root_assword -e MYSQL_USER=mon_user -e   MYSQL_PASSWORD=user_password -e MYSQL_DATABASE=database_name  mysql:5.7.36
+docker run -itd --name db-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root_assword -e MYSQL_USER=mon_user -e   MYSQL_PASSWORD=user_password -e MYSQL_DATABASE=database_name  mysql:5.7.36
 ```
-## Variables d'environnement
-On ne va surtout pas tous les voir ici mais je vous invite à régarder <a href="https://dev.mysql.com/doc/refman/5.7/en/environment-variables.html" style="text-decoration: underline; color:black" > ici</a> où vous en trouverez beaucoup.
- Alors ceux qu'on a utilisé sont assez claire, mais pour juste un peu parler je dirait que chaque server ou base de donnée bref chaque image docker peut contenir des variables d'environnements...
+
+### Variables d'environnement
+
+On ne va surtout pas tous les voir ici mais je vous invite à régarder <a href="https://dev.mysql.com/doc/refman/5.7/en/environment-variables.html" style="text-decoration: underline; color:black" > ici</a> où vous en trouverez beaucoup.  
+Alors ceux qu'on a utilisé sont assez claire, mais pour juste un peu parler je dirais que chaque server ou base de donnée bref chaque image docker peut contenir des variables d'environnements.  
+On peut donc trouver dans le docker hub de l'image oubien sur le site officiel de la techno quel environnement on en a besoin.  
+On le spécifie dans docker run avec " -e, --env, --env-file " et dans un docker-compose par "environment"
+
+<h6> Exemple de dokcer run:</h6>
+
+```
+ docker run -e MYVAR1 --env MYVAR2=foo --env-file ./env.list ubuntu bash
+
+```
+
+<h6> Exemple de dokcer-compose:</h6>
+
+```yml
+environment:
+  - MYSQL_ROOT_PASSWORD: root_assword
+  - MYSQL_USER: mon_user
+  - MYSQL_PASSWORD: user_password
+  - MYSQL_DATABASE: database_name
+
+```
+
 ## Conclusion
 
 Si vous ne comprenez rien je vous comprendrais 😁, je vous invite donc de voir <a style="text-decoration: underline; color:black" href="https://docs.docker.com/compose/gettingstarted/">ce article sur docker-compose.</a>  
 Car, ceci n'est qu'une introduction au MySQL en utilisant les containers, pour plus d'informations visitez le site <a style="text-decoration: underline; color:black"  href="https://hub.docker.com/_/mysql?tab=description"> docker-hub </a> ou sur le site de MySQL Server <a style="text-decoration: underline; color:black" href="https://www.mysql.com/">www.mysql.com </a>.
+
