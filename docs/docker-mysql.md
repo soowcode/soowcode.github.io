@@ -2,7 +2,7 @@
 
 <img src="../../img/docker-mysql.png" alt="drawing" />
 
-## <p style="visibility: hidden;">Introduction</p>
+## Introduction
   <li><i style=" margin-left:5%; font-weight:bold; font-size:28px">MySQL </i>
       <ul></br>
           <li>est un système de gestion de base de données relationnelle</li>
@@ -16,7 +16,7 @@
       </ul>
   </li>
 
-## <p style="visibility: hidden;">Fonctionnement</p>
+## Fonctionnement
 ### Docker-compose
 
 Pour faire tourner une database MySQL dans un conteneur nous allons creer un docker-compose.yml ou utiliser un docker run .

@@ -1,5 +1,6 @@
 # MQTT
 ![Screenshot-from-2021-11-17-17-02-57](https://thanos.savoirguinee.com/content/images/2021/11/Screenshot-from-2021-11-17-17-02-57.png)
+## Introduction
 Utilisé pour le transfert de **Machine-to-Machine (M2M)**, MQTT est considéré comme l'un des principaux protocoles de messagerie de l'internet des objets, mais côté industriel (**IoT)**. Il est open source, léger (**en tête de messages de 2 octets**), faible utilisation de la bande passante du réseau (**93 fois plus rapides que le HTTP**), faible consommation d'énergie (**11 fois moins pour envoyer et 170 pour ne recevoir que le HTTP**) et fiable (mécanisme natif de Qos, acronyme de Quality of Service).
 
 Son autre avantage, c'est qu'il est extrêmement facile à mettre en œuvre du côté client. C'est donc la solution parfaite pour l'IoT.
@@ -11,9 +12,8 @@ Utilisé par nombreux acteurs dans le monde Facebook, openstack, geospatial, Bos
 
 
 MQTT focntionne sur le principe de **publication/abonnement**(publish/subscribe)
-
-
-## C’est quoi un broker MQTT ?
+## Fonctionnement
+### C’est quoi un broker MQTT ?
 
 
 Vous pouvez envoyer une commande pour contrôler une sortie ou vous pouvez la lire à partir d'un capteur et la publier.
@@ -46,7 +46,7 @@ Il y a plusieurs brokers que vous pouvez utiliser.
 
 Nous allons utiliser le broker mosquito que vous installerez sur votre raspberry pi.
 
-## Installer Mosquitto sur Linux ou Raspberry Pi
+### Installer Mosquitto sur Linux ou Raspberry Pi
 D'abord mettons à jour notre système avant d’installer Mosquito ce n'est pas obligatoire mais recommandé.
 ```
 sudo apt update && apt upgrade
@@ -65,11 +65,11 @@ Pour verifier l'insatllation
 ```
 systemctl status mosquitto
 ```
-## Installer Mosquitto sur Windows ou macOS
+### Installer Mosquitto sur Windows ou macOS
 Pour Windows ou macos je vous recommande de télécharger et installer via ce [lien](https://mosquitto.org/download/)
 
 
-## Sécurisé Mosquitto
+### Sécurisé Mosquitto
 Maintenant on a Mosquitto qui fonctionne bien sur notre machine.
 Mais pas sécurisé, maintenant sécurisons le! Creons un user avec un password
 Pour cela tapez
@@ -98,7 +98,7 @@ Maintenant on redemarre Mosquitto
 systemctl restart mosquitto
 ```
 ![systemctl](https://thanos.savoirguinee.com/content/images/2021/11/systemctl.png)
-## Publier (envoyer) un message MQTT depuis le terminal
+### Publier (envoyer) un message MQTT depuis le terminal
 
 Pour publier un message on utilise la commande mosquitto_pub et pour connaitre les options liées à la commande on utilise mosquitto_pub -help
 
@@ -116,7 +116,7 @@ Pour plus d'information voir [documentation](https://mosquitto.org/man/mosquitto
 ```
 mosquitto_pub -h localhost -t news/football -m "jai gagné le ballon d'or!"
 ```
-## Recevoir (souscrire) des messages
+### Recevoir (souscrire) des messages
 Pour recevoir un message on utilise la commande mosquitto_sub et pour connaitre les options liées à la commande on utilise mosquitto_sub -help
 Ouvrez un  second Terminal et exécutez la commande suivant.
 ```
