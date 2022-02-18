@@ -1,2 +1,0 @@
-# SQL SEVER
-Comming soon sorry for the delay 🥺

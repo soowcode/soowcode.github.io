@@ -28,6 +28,8 @@ Ainsi la plupart des difficultés rencontrées sont répertoriées ici pour en f
 - <a  style="text-decoration: underline; color:black"  href="https://soowcode.github.io/react-native/">React-native</a>
 - <a  style="text-decoration: underline; color:black"  href="https://soowcode.github.io/spring-boot/" >Spring-boot</a>
 - <a  style="text-decoration: underline; color:black"  href="https://soowcode.github.io/tests/">Tests avec python</a>
+- <a  style="text-decoration: underline; color:black"  href="https://thanos.savoirguinee.com/cockpit/">Cockpit</a>
+
 
 <h2> Author</h2>
 

@@ -1,4 +1,4 @@
-# Commandes utiles
+# Python commandes utiles
 Cette commande permet de connaitre les packages installés dans notre projet
 ```
 python3 -m pip freeze 
