@@ -300,8 +300,6 @@ sudo expo install react-native-gesture-handler react-native-reanimated react-nat
 ```
 sudo npm install @react-navigation/stack
 ```
-## Les touchables:
-### TouchableOpacity
 ----
 **Sources:**
 
