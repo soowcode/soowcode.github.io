@@ -60,10 +60,12 @@ Nom , age, taille = "Barry", 3, 2.01
 
 print(Nom)
 ```
-
-<img src="../../img/variables.gif" alt="drawing" style="width:50%; height:300px"/>
+<div style="text-align:center">
+<img src="../../img/variables.gif" alt="drawing" style="width:45%; height:45%"/>
+</div>
 
 ## Conclusion
-
+<div style="text-align:center">
 <img src="../../img/done.gif" alt="drawing" style="width:30%; height:30%"/>  
+</div>
 Dans ce tutoriel, nous avons vu comment installer python sur Linux, dans les prochains tutos, nous verrons quelques notions en python, telle que les fonctions, les listes compréhension, les classes, les modules, les tests unitaires, tests end-to-ends and so on...

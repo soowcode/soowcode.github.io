@@ -1,16 +1,21 @@
 # Docker
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_35uv2spq.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop  autoplay></lottie-player>
 
+
+<div style="text-align:center">
+<img src="../../img/docker.gif" alt="drawing" style="width:45%; height:45%; margin-bottom:5% "/>
+
+</div>
 ## Introduction
 
 🤔 Bahh je dirais que c'est comme le bateau qui contient beacoups de containers, ils sont sur le même beateau mais chacun est isolé des autres selon son contenu mais ils peuvent communiquer entre eux par des canaux bien définis(le réseau=> network).
 
 Un contenair docker est une image en execution. ohhh a new word 😵? Oui mais je vous l'explique, une image Docker représente le système de fichiers, sans les processus. ... Par contre un conteneur est l'exécution d'une image : il possède la copie du système de fichiers de l'image, ainsi que la capacité de lancer des processus. En gros, c'est un OS, avec lequel vous pouvez interagir
 
+<div style="text-align:center">
 <i style="color:green; font-size:30px">Quoi encore? </i>
-<img src="../../img/thinking-girls.gif" alt="drawing" style="width:50%; height:300px"/>
+<img src="../../img/thinking-girls.gif" alt="drawing" style="width:45%; height:45%; margin-bottom:5% "/>
 
+</div>
 😲 ** Les volumes Docker: ** c'est un endroit qu'on crée pour préserver les données générées par le conteneur en cours d'exécution . Ils sont stockés sur l'hôte, indépendamment du cycle de vie du conteneur. Cela permet aux utilisateurs de sauvegarder facilement des données et de partager des systèmes de fichiers entre les conteneurs
 
 ## Fonctionnement
@@ -175,9 +180,10 @@ services:
 </ol>
 
 ## Conclusion
+<div style="text-align:center">
+<img src="../../img/done.gif" alt="drawing" style="width:45%; height:45%; margin-bottom:5% "/>
 
-<img src="../../img/done.gif" alt="drawing" style="width:50%; height:300px"/>
-
+</div>
 Nous arrivons à la fin de notre tutorial, pour plus d'informations je vous recommande la documentation du Docker dont j'ai mis le liens en bas dans les ressources.
 
 **Sources**: <a style="text-decoration: underline; color:black"  href="https://dockerlabs.collabnix.com/docker/cheatsheet/">Docker cheat sheet</a>

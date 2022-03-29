@@ -1,7 +1,7 @@
 # Happy path and edge cases
 
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_rbtawnwz.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_rbtawnwz.json"  background="transparent"  speed="2.5"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
 
 Un nouveau concept qui est très important dans les tests. Le "edge cases and happy path" deux termes contraires mais très importants. Ils seront définis dans la section qui est en bas et un exemple de chacun sera donné.  
 L'un est pour les cas extrêmes et l'autre pour les cas où l'on s'attend à une chose et on l'obtient si on suit le bon chemin.
@@ -9,7 +9,7 @@ L'un est pour les cas extrêmes et l'autre pour les cas où l'on s'attend à une
 c'est le chemin qui, si on le suit rien de fâcheux n'arrivera.
 <br>
 <div style="text-align:center">
-    <img src="../../img/happy-path.jpg" style="width:50%; height:350px"/><br>
+    <img src="../../img/happy-path.jpg" style="width:220px; height:220px"/><br>
 </div>
 <br>
 **Exemple :** si vous voulez de l'argent à la banque, il faut mettre sa carte et mettre le bon code et aussi qu'il y ait de l'argent au distributeur si tout ceci réunit, vous obtiendrez sûrement votre argent et c'est le `happy path`.
