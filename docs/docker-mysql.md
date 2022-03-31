@@ -19,13 +19,13 @@
 ## Fonctionnement
 ### Docker-compose
 
-Pour faire tourner une database MySQL dans un conteneur nous allons creer un docker-compose.yml ou utiliser un docker run .
+Pour faire tourner une database MySQL dans un conteneur la création d'un docker-compose.yml est nécessaire ou l'utilisation d'un docker run.
 
 <div style="text-align:center">
 <img src="../../img/thinking-boy.gif" alt="drawing" style="width:30%; height:30%"/>
 <p> Hummm, comment le faire???</p>
 </div>
-Ahhh mais c'est simple, je crée un fichier "docker compose.yml " dans mon folder et je mets ceci dedans.
+Ahhh, mais c'est simple, créer un fichier "docker compose.yml " dans votre folder et  mettez ceci dedans.
 
 ```yml
 version: "3.9"
@@ -46,7 +46,7 @@ services:
       - 3306:3306
 ```
 
-Ainsi, en ligne de commande je peux accéder à MySQL en tapant:
+Ainsi, en ligne de commande accéder à MySQL en tapant:
 
 ```
   docker exec -it db-mysql bash
@@ -59,19 +59,19 @@ Ne vous découragerez pas je vous explique
 - Le "db-mysql" est nom du conteneur
 - Le "bash" à la fin signifie qu'on veut exécuter "db-mysql" en mode bash
 
-> Sachez que si on utilisait "docker-compose exec" on allait utiliser le nom du service, car docker-compose manipule les services tandisque docker manipule les containers.
+> Sachez que le "docker-compose" manipule les services, mais que docker lui seul manipule les containers.
 
-Mais, perso j'ai choisi d'installer sur vscode l'extension database qui me permet de me connecter et manipuler MySQL avec une jolie interface <a style="text-decoration: underline; color:black" href="https://marketplace.visualstudio.com/items?itemName=bajdzis.vscode-database">plus d'info sur l'extension database.</a>
+Mais, perso, j'ai choisi d'installer sur vscode l'extension database qui me permet de me connecter et de manipuler MySQL avec une jolie interface <a style="text-decoration: underline; color:black" href="https://marketplace.visualstudio.com/items?itemName=bajdzis.vscode-database">plus d'info sur l'extension database.</a>
 
 <div style="text-align:center">
 <img src="../../img/mysql_r.png" alt="drawing" />
 <p>Database extension après connexion à la base mysql</p>
 </div>
 
-No kidding 😂 !! je ne me suis pas arreté la-bas.
+No kidding 😂 !! je ne me suis pas arretée là.
 
 J'ai donc rajouté une interface web en utilisant adminer. Documentation juste 👉 <a style="text-decoration: underline; color:black" href="https://www.adminer.org/"> ici</a>.  
-Sinon voici un exemple de docker-compose de adminer.
+Sinon voici un exemple de docker-compose avec adminer comme service.
 
 ```yml
 adminer:
@@ -88,15 +88,15 @@ Vous trouverez plus d'info sur <a style="text-decoration: underline; color:black
 
 ### Docker run
 
-ALors j'aime bien le docker-compose car ça nous évite de rappeler nos commandes oubien de recopier tout le temps la commande. C'est aussi un moyen rapide de faire des modifications.
+Alors j'aime bien le docker-compose, car ça nous évite de rappeler nos commandes ou bien de recopier tout le temps la commande. C'est aussi un moyen rapide de faire des modifications.
 
-Mais c'est pas la seule methode à utiliser pour initialiser un container MySQL, il ya la simple commande `docker run`
+Mais ce n'est pas la seule méthode à utiliser pour initialiser un container MySQL, il y a la simple commande `docker run`
 
 ```
 docker run --name=container_name  --restart on-failure -d image_name:tag
 ```
 
-En remplaçant les lettres par leurs valeurs on obtient un truc pareil:
+En remplaçant les lettres par leurs valeurs, on obtient un truc pareil :
 
 ```
 docker run -itd --name db-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root_assword -e MYSQL_USER=mon_user -e   MYSQL_PASSWORD=user_password -e MYSQL_DATABASE=database_name  mysql:5.7.36
@@ -104,9 +104,9 @@ docker run -itd --name db-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root_assword
 
 ### Variables d'environnement
 
-On ne va surtout pas tous les voir ici mais je vous invite à régarder <a href="https://dev.mysql.com/doc/refman/5.7/en/environment-variables.html" style="text-decoration: underline; color:black" > ici</a> où vous en trouverez beaucoup.  
-Alors ceux qu'on a utilisé sont assez claire, mais pour juste un peu parler je dirais que chaque server ou base de donnée bref chaque image docker peut contenir des variables d'environnements.  
-On peut donc trouver dans le docker hub de l'image oubien sur le site officiel de la techno quel environnement on en a besoin.  
+On ne va surtout pas tous les voir ici, mais je vous invite à régarder <a href="https://dev.mysql.com/doc/refman/5.7/en/environment-variables.html" style="text-decoration: underline; color:black" > ici</a> où vous en trouverez beaucoup.
+Alors ceux qu'on a utilisés sont assez clairs, mais pour juste un peu parler, je dirais que chaque serve ou base de données bref chaque image docker peut contenir des variables d'environnements.
+On peut donc trouver dans le docker hub de l'image ou bien sur le site officiel de la techno quel environnement on en a besoin.  
 On le spécifie dans docker run avec " -e, --env, --env-file " et dans un docker-compose par "environment"
 
 <h6> Exemple de dokcer run:</h6>
