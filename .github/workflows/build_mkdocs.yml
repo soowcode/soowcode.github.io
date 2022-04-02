@@ -20,4 +20,21 @@ jobs:
       - run: pip install mkdocs
       - run: mkdocs gh-deploy --force
       - run: echo "🎉 The job was successful."
+
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: List files in the repository
+        run: |
+          docker ps
+          docker images
+          ls -al
+          printenv
+          docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p  ${{ secrets.DOCKERHUB_PASSWORD }}
+          docker build -t kbosow/docs-soowcode:${GITHUB_REF_NAME} .
+          docker build -t kbosow/docs-soowcode:${GITHUB_SHA} . 
+          docker push kbosow/docs-soowcode:${GITHUB_REF_NAME}
+          docker push kbosow/docs-soowcode:${GITHUB_SHA}
+
   

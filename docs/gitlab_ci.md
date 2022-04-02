@@ -1,4 +1,4 @@
-# gitlab-ci.yml
+# Gitlab-ci
 <div style="text-align:center">
 <img src="../../img/gitlab.png" alt="drawing" style="width:45%; height:45%; margin-bottom:5% "/>
 

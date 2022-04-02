@@ -1,4 +1,4 @@
-# Github actions
+# Github-actions
 ## Introduction
 <img src="../../img/gitflow.png" /> <br>
 Il est indispensable de développer des logiciels sans les pipelines CI/CD.
