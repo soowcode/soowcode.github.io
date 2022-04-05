@@ -44,7 +44,7 @@ Ainsi la plupart des difficultés rencontrées sont répertoriées ici pour en f
 - Twitter: [@Sow34979868](https://twitter.com/Sow34979868)
 - Github: [@sowousmane](https://github.com/sowousmane)
 - LinkedIn: [@ousmane-sow-79071412a](https://www.linkedin.com/in/ousmane-sow-79071412a/)
-- CV: [CV-DevOps](https://soowcode.github.io/files/cv/cv_ousmane.pdf)
+- CV: [CV-DevOps](https://soowcode.github.io/files/cv/CV_Ousmane_SOW.pdf)
 
 <h2>Soutenez-nous !</h2>
 

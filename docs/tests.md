@@ -77,7 +77,11 @@ Ce sont les tests permettant de vérifier le bon fonctionnement d'une applicatio
 
 - Il teste si l'input est changé, quel message d'erreur s'affiche.
 - Il teste si l'input change et que c'est une fonction ou une API quelle est la valeur/code e retour.
+- Il teste les fonctionnalités critiques
+- Il teste  les fonctionnalités de base
+- Il teste  les fonctionnalités des cas extrêmes
 - Il teste tout !!
+
 
 
 ```python
