@@ -27,6 +27,6 @@ c'est un problème ou une situation qui arrive seulement dans l'extrême par exe
 ## Conclusion
 Ce tutoriel était une explication simple et rapide d'un concept souvent utilisé dans les tests, mais dont les gens ne savent pas le nom ou certains ne l'utilisent pas.
 
-EN espérant qu'à partir de maintenant, vous tiendrez compte de concept dans vos tests.
+En espérant qu'à partir de maintenant, vous tiendrez compte de ce concept dans vos tests.
 
 À bientôt :D
