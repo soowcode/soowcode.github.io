@@ -33,8 +33,9 @@ jobs:
           printenv
           docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p  ${{ secrets.DOCKERHUB_PASSWORD }}
           docker build -t kbosow/docs-soowcode:dev .
-          docker build -t kbosow/docs-soowcode:${GITHUB_SHA} . 
           docker push kbosow/docs-soowcode:dev
-          docker push kbosow/docs-soowcode:${GITHUB_SHA}
+
+# docker push kbosow/docs-soowcode:${GITHUB_SHA}
+# docker build -t kbosow/docs-soowcode:${GITHUB_SHA} . 
 
   

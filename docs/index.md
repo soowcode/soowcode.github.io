@@ -8,7 +8,7 @@
    
 </p>
 
-Nous sommes comme de centaines d'autres débrouillards. Ici, nous partageons ce que nous avons rencontré comme difficulté sous forme de tutoriel pour que vous pussiez ne plus faire la même erreur ou au moins savoir comment résoudre le problème.
+Nous sommes comme de centaines d'autres débrouillards. Ici, nous partageons ce que nous avons rencontré comme difficulté sous forme de tutoriel pour que vous puissiez ne plus faire la même erreur ou au moins savoir comment résoudre le problème.
 
 Il y a plusieurs sujets tous mélanger du langage de programmation au github actions en passant par Docker, MQTT (IoT) et les tests en python.
 
