@@ -12,7 +12,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - run: printenv
+      #- run: printenv
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
         with:
@@ -36,6 +36,5 @@ jobs:
           docker push kbosow/docs-soowcode:dev
 
 # docker push kbosow/docs-soowcode:${GITHUB_SHA}
-# docker build -t kbosow/docs-soowcode:${GITHUB_SHA} . 
+# docker build -t kbosow/docs-soowcode:${GITHUB_SHA} .
 
-  
