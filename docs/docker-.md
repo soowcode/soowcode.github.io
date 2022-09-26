@@ -84,7 +84,7 @@ docker pull ubuntu:22.04
 
 ### Une image alpine?
 Alpine Linux est une distribution Linux.  
-Qui est legère et est parfait pour les petits système d'exploitation l'image ne fait que 5 Mo.
+Qui est legère et est parfaite pour les petits système d'exploitation l'image ne fait que 5 Mo.
 
 ```
 docker pull alpine:3.15.0
@@ -119,7 +119,7 @@ docker run -d \
 
 ### Dockerfile
 
-Bahhh ce fichier contient la manière dont on crée notre image, au lieu de le faire en ligne de commande, on peut le faire dans un fichier dont la maintenance est facile.
+Bahhh ce fichier contient la manière dont on crée notre image, au lieu de le faire en ligne de commande, on peut le faire dans un fichier dont la maintenance est plus facile.
 
 ```
 FROM python:3.7-alpine
