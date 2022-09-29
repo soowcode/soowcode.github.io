@@ -11,7 +11,7 @@
 Un conteneur docker est une image en exécution. ohhh a new Word 😵? Oui, mais je vous l'explique, une image Docker représente le système de fichiers, sans les processus...  
 Par contre un conteneur est l'exécution d'une image : il possède la copie du système de fichiers de l'image, ainsi que la capacité de lancer des processus.
 
-En gros, c'est un OS, avec lequel vous pouvez interagir.
+En gros, c'est un OS, avec lequel vous pouvez vous amusez avec.
 
 <div style="text-align:center">
 <i style="color:green; font-size:30px">Quoi encore? </i>
@@ -50,7 +50,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
 
 si vous n'avez pas curl installé alors faite le
-<a  href="https://docs.docker.com/get-started/">ici</a>
+<a  href="https://docs.docker.com/get-started/">par ici</a>
 
 Ajoutez le dépôt Docker aux sources APT
 
@@ -172,7 +172,7 @@ services:
 <ol>
     <li><i style="color:green; font-weight:bold; font-size:18px">Container Management CLIs </i>
         <ul>
-            <li><strong> docker run image :</strong> crée le container et le lance</li>
+            <li><strong> docker run image :</strong> crée le container et le lance i.e. **docker run postgres:alpine3.16** </li>
             <li><strong> docker start container:</strong> lance le container</li>
             <li><strong> docker stop container:</strong> arrête le container</li>
             <li><strong> docker kill container:</strong> tue le container</li>
