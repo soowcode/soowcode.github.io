@@ -1,88 +1,81 @@
-# Docker
+---
+title: Docker
+position: 1
+---
+# Introduction
+
+Pour avoir seulement les commandes à executer, rendez-vous ici.[SoowCode-tech](https://github.com/soowcode/docs-sorus)  
+Sinon un peu d'explication :)
+<div style="text-align:center">
+<img src="../../img/docker.gif" alt="drawing" style="width:45%; height:45%"/>
+</div>
+Docker est une plate-forme en tant que produits de service (Paas i.e platforms as a service) qui utilisent la visualisation au niveau du système d'exploitation pour fournir des logiciels dans des packages appelés conteneurs.  
+🤔 Bon d'autre part j'ai envie de dire que c'est comme un bateau qui contient beaucoup de conteneurs, ils sont sur le même beateau, mais chacun est isolé des autres selon son contenu.  
+Ils peuvent communiquer entre eux par des canaux bien définis (le réseau => network).  
+Ils appartient au même noyau de système d'exploitation et utilisent donc moins de ressources qu'une machine virtuelle.  
+Docker est un système d'exploitation pour conteneurs.
+
 
 <div style="text-align:center">
-<img src="../../img/docker.gif" alt="drawing" style="width:45%; height:45%; margin-bottom:5% "/>
+<i style="color:green; font-size:30px">Pourquoi utiliser Docker?  </i>
+<img src="../../img/thinking-girls.gif" alt="drawing" style="width:45%; height:45%"/>
 
 </div>
-## Introduction
+ 
+😲 ** Tu nous le demande? bon bahh on ne sait pas**  
 
-🤔 Bahh, je dirais que c'est comme le bateau qui contient beaucoup de containers, ils sont sur le même beateau, mais chacun est isolé des autres selon son contenu, mais ils peuvent communiquer entre eux par des canaux bien définis (le réseau => network).
+Docker permet:
 
-Un conteneur docker est une image en exécution. ohhh a new Word 😵? Oui, mais je vous l'explique, une image Docker représente le système de fichiers, sans les processus...  
-Par contre un conteneur est l'exécution d'une image : il possède la copie du système de fichiers de l'image, ainsi que la capacité de lancer des processus.
+- D'envoyer du code plus rapidement
+- De standardiser les opérations des applications
+- De migrer aisément du code 
+- De faire des économies en améliorant l'utilisation des ressources.
+
+Avec Docker, vous obtenez un objet unique que vous pouvez exécuter n'importe où de manière fiable.  
+Grâce à sa syntaxe simple, Docker vous confère le contrôle total.  
+Comme Docker est adopté à grande échelle, il s'accompagne d'un solide écosystème d'outils et d'applications standard.
+
+
+## Conteneurs
+
+- C'est une image en exécution.
+- Il permet de regroupe le code et toutes ses dépendances 
+- Il facilite l'exécution rapide et de manière fiable d'un environnement informatique à un autre  des applications. 
+- Il possède la copie du système de fichiers de l'image, ainsi que la capacité de lancer des processus.
 
 En gros, c'est un OS, avec lequel vous pouvez interagir.
-
-<div style="text-align:center">
-<i style="color:green; font-size:30px">Quoi encore? </i>
-<img src="../../img/thinking-girls.gif" alt="drawing" style="width:45%; height:45%; margin-bottom:5% "/>
-
-</div>
-😲 ** Les volumes Docker: ** C'est un endroit qu'on crée pour préserver les données générées par le conteneur en cours d'exécution. Ils sont stockés sur l'hôte, indépendamment du cycle de vie du conteneur. Cela permet aux utilisateurs de sauvegarder facilement des données et de partager des systèmes de fichiers entre les conteneurs.
-
-## Fonctionnement
-
-### Installation
-
-Je rappelle que si vous avez Windows, vous allez avoir besoin de ce tutoriel <a href="https://docs.docker.com/desktop/windows/install/"> installe sur Windows</a>
-
-Pour Linux :  
-Soyez sure que l'ancienne version si existe pas.
-
-```
-sudo apt-get remove docker docker-engine docker.io containerd runc
-
-```
-
-Ensuite, installez quelques packages prérequis qui permettent aptd'utiliser des packages via HTTPS
-
-```
- sudo apt install apt-transport-https ca-certificates curl software-properties-common
-
-```
-
-Ajoutez ensuite la clé GPG du référentiel Docker officiel à votre système
-
-```
-
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-
-```
-
-si vous n'avez pas curl installé alors faite le
-<a  href="https://docs.docker.com/get-started/">ici</a>
-
-Ajoutez le dépôt Docker aux sources APT
+### Exemple
 
 ```bash
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+docker run --name test -it debian
 ```
+Pour savoir quels sont les actions qu'on peut effectuer lancez `docker run --help`.  
+[Plus d'info sur les conteneurs](https://www.digitalocean.com/community/tutorials/how-to-use-docker-exec-to-run-commands-in-a-docker-container)
+### Docker container --help
 
-Enfin, installez Docker
 
+<div style="text-align:center">
+<img src="../../img/docker_container.png" alt="drawing" style="margin-bottom:3%" />
+</div>
+
+## Images
+- C'est un ensemble d'instructions pour créer un conteneur pouvant s'exécuter.  
+- Elle représente le système de fichiers, sans les processus...  
+- C'est un ensemble de couche(layers).
+- Les images sont également le point de départ pour quiconque utilise Docker pour la première fois.
+### Exemple
+```bash
+docker pull debian
 ```
-sudo apt install docker-ce
-```
+### Docker image --help
 
-### Vérification d'installation
+<div style="text-align:center">
+<img src="../../img/docker-image.png" alt="drawing" style="margin-bottom:3%"/>
+</div>
 
-Vérifiez qu'il est en cours d'exécution
+[Plus d'info sur le site de Docker](https://docs.docker.com/engine/reference/commandline/pull/)
 
-```
-
-sudo systemctl status docker
-
-```
-
-### Exemple d'image
-
-Récupération d'une image à partir de docker hub <a href="https://www.docker.com/products/docker-hub"> lien </a>
-
-```
-docker pull ubuntu:22.04
-```
-
-### Une image alpine?
+### Une petite image?
 Alpine Linux est une distribution Linux.  
 Qui est legère et est parfait pour les petits système d'exploitation l'image ne fait que 5 Mo.
 
@@ -90,36 +83,41 @@ Qui est legère et est parfait pour les petits système d'exploitation l'image n
 docker pull alpine:3.15.0
 ```
 
-### Création d'un container
+## Volumes
 
-```
-docker run [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]
-```
+<div style="text-align:center">
+<img src="../../img/volumes.png" alt="drawing" style="margin-bottom:3%"/>
+</div>
 
-Exemple:
+OHHHH 🤯 on a entendu dire que c'est casse tête? Mais non c'est un sujet simple je vous explique:   
+C'est la manière la plus sûre de créer et d'utiliser les données d'un conteneur.
+### Fonctionnement
+C'est un endroit qu'on crée pour préserver les données générées par le conteneur en cours d'exécution. Ils sont stockés sur l'hôte, indépendamment du cycle de vie du conteneur. Cela permet aux utilisateurs de sauvegarder facilement des données et de partager des systèmes de fichiers entre les conteneurs.
 
-```
-docker run -it --pid=container:my-redis my_strace_docker_image bash
-```
+### Avantages
+- Ils sont plus faciles à sauvegarder ou à migrer.
+- La gestion est facile à l'aide des commandes Docker CLI ou de l'API Docker.
+- Ils fonctionnent sur les conteneurs Linux et Windows.
+- Ils peuvent être partagés de manière plus sûre entre plusieurs conteneurs.
+- Les pilotes de volume vous permettent de stocker des volumes sur des hôtes distants ou des fournisseurs de cloud, de chiffrer le contenu des volumes ou d'ajouter d'autres fonctionnalités.
+- Les nouveaux volumes peuvent avoir leur contenu pré-rempli par un conteneur.
 
 ### Créeation d'un volume
 
 ```
 docker volume create [OPTIONS] [VOLUME]
 ```
+On peut aussi créer un volume avec la commande `docker run --mount source=myvol2,target=/app` ou `docker run  -v myvol2:/app`   
+Pour savoir tout ce qu'on peut faire avec les volumes taper la commande ` docker volume --help`
 
-Exemple:
+<div style="text-align:center">
+<img src="../../img/docker-volume-help.png" alt="drawing" style="margin-bottom:3%"/>
+</div>
 
-```
-docker run -d \
-  --name devtest \
-  -v myvol2:/app \
-  nginx:latest
-```
 
 ### Dockerfile
 
-Bahhh ce fichier contient la manière dont on crée notre image, au lieu de le faire en ligne de commande, on peut le faire dans un fichier dont la maintenance est facile.
+Ce fichier permet de créer une image custom, au lieu de le faire en ligne de commande, on peut le faire dans un fichier dont la maintenance est facile.
 
 ```
 FROM python:3.7-alpine
@@ -206,7 +204,7 @@ services:
 <img src="../../img/done.gif" alt="drawing" style="width:45%; height:45%; margin-bottom:5% "/>
 
 </div>
-Ce tutoriel arrive à sa fin, pour plus d'informations, je vous recommande la documentation du Docker dont le lien est en bas dans les ressources.
+Ce tutoriel arrive à sa fin, pour plus d'informations, je vous recommande la documentation de Docker dont le lien est en bas dans les ressources. Ou sur les tutoriels techniques de SoowCode.
 
 **Sources**:   
 <a style="text-decoration: underline; color:black"  href="https://dockerlabs.collabnix.com/docker/cheatsheet/">Docker cheat sheet</a>  

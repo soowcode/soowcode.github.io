@@ -17,4 +17,6 @@ COPY --from=build /data/site /data/site
 WORKDIR /data/site
 
 EXPOSE 8000
+
+#entrypoint
 CMD python -m http.server 8000 
