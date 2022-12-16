@@ -77,7 +77,7 @@ docker pull debian
 
 ### Une petite image?
 Alpine Linux est une distribution Linux.  
-Qui est legère et est parfait pour les petits système d'exploitation l'image ne fait que 5 Mo.
+Qui est legère et est parfaite pour les petits système d'exploitation l'image ne fait que 5 Mo.
 
 ```
 docker pull alpine:3.15.0
@@ -96,7 +96,7 @@ C'est un endroit qu'on crée pour préserver les données générées par le con
 
 ### Avantages
 - Ils sont plus faciles à sauvegarder ou à migrer.
-- La gestion est facile à l'aide des commandes Docker CLI ou de l'API Docker.
+z- La gestion est facile à l'aide des commandes Docker CLI ou de l'API Docker.
 - Ils fonctionnent sur les conteneurs Linux et Windows.
 - Ils peuvent être partagés de manière plus sûre entre plusieurs conteneurs.
 - Les pilotes de volume vous permettent de stocker des volumes sur des hôtes distants ou des fournisseurs de cloud, de chiffrer le contenu des volumes ou d'ajouter d'autres fonctionnalités.
@@ -170,7 +170,7 @@ services:
 <ol>
     <li><i style="color:green; font-weight:bold; font-size:18px">Container Management CLIs </i>
         <ul>
-            <li><strong> docker run image :</strong> crée le container et le lance</li>
+            <li><strong> docker run image :</strong> crée le container et le lance i.e. **docker run postgres:alpine3.16** </li>
             <li><strong> docker start container:</strong> lance le container</li>
             <li><strong> docker stop container:</strong> arrête le container</li>
             <li><strong> docker kill container:</strong> tue le container</li>

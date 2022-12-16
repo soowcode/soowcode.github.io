@@ -8,7 +8,8 @@
 
 ### 🏠 [WEBSITE](https://soowcode.github.io/)
 
-Une petite explication sur comment lancer ce projet en local et faire des contributions, sache que tu es la bienvenue. Nous sommes ravie de t'avoir parmis nos contributors.
+Une petite explication sur comment lancer ce projet en local et faire des contributions.  
+D'abord sachez que vous êtes les bienvenues. Nous sommes ravies de vous avoir parmi nos contributors.
 #### Installation de l'environnement de travaille
 ```
 git clone git@github.com:soowcode/soowcode.github.io.git

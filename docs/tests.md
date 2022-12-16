@@ -7,9 +7,9 @@ Chacun fait des erreurs dans cette vie, donc les développeurs aussi.
 
 - Mal comprendre les exigences
 - Manquer des points-virgules
-- Manquer de compréhension sur un scénario de cas marginal
+- Manquer de compréhension sur un scénario de cas marginal  
 Ainsi, pour gérer ces erreurs, les tests ont été mis en place.
-`
+
 ## Différents types de tests.
 Il y a plusieurs types de test.
 
