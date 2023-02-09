@@ -1,7 +1,7 @@
 # Oh My Zsh
 ## Introduction
 
-Humm, disons que vous en avez marre de la manière dont votre terminal look like alors Oh My Zsh est l'une des solutions les plus utilisées.
+Humm, disons que vous en avez marre de la manière dont votre terminal looks like alors Oh My Zsh est l'une des solutions les plus utilisées.
 
 - Il est open source.
 - Il est super personnalisable.
@@ -11,7 +11,7 @@ Humm, disons que vous en avez marre de la manière dont votre terminal look like
 
 ## Fonctionnement
 ### Installation
-Comme voulons installer un nouvel utilitaire sur notre système, nous devons d'abord mettre à jour notre ordinateur pour le préparer à exécuter ce nouveau. 
+Comme nous voulons installer un nouvel utilitaire sur notre système, nous devons d'abord mettre à jour notre ordinateur pour le préparer à exécuter ce dernier. 
  ```
  sudo apt-get update
  ```
