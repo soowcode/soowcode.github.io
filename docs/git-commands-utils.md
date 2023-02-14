@@ -1,6 +1,6 @@
-# Git Delete
+# Git Delete 😇
 
-## Git Delete Remote Branch - Supprimer une branche distante
+## Git Delete a remote branch 👉 Supprimer une branche distante
 
 1.Commencez par vérifier dans quelles branches vous êtes actuellement et voir également la liste des branches distances même celles que vous n'avez pas créée en exécutant la commande suivante :
 
@@ -34,7 +34,7 @@ git branch -a
 
 Vous devriez voir que la branche «my-branch» a été supprimée.
 
-## Git Delete local Branch - Supprimer une branche en local
+## Git delete a local branch 👉 Supprimer une branche en local
 
 Comme en haut, on lance la commande git branch afin de voir la liste des branches en local.
 
