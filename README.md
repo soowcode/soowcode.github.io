@@ -10,10 +10,16 @@
 
 Une petite explication sur comment lancer ce projet en local et faire des contributions.  
 D'abord sachez que vous êtes les bienvenues. Nous sommes ravies de vous avoir parmi nos contributors.
+
 #### Installation de l'environnement de travaille
 ```
 git clone git@github.com:soowcode/soowcode.github.io.git
 
+```
+Entrez dans le dossier cloné
+
+```
+cd soowcode
 ```
 Puis install les packages necessaires pour le lancement du projet que vous trouverez dans le fichier requierements.txt
 
