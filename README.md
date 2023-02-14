@@ -13,7 +13,7 @@ D'abord sachez que vous êtes les bienvenues. Nous sommes ravies de vous avoir p
 
 #### Installation de l'environnement de travaille
 ```
-git clone git@github.com:soowcode/soowcode.github.io.git
+git clone https://github.com/soowcode/soowcode.github.io.git
 
 ```
 Entrez dans le dossier cloné
