@@ -1,18 +1,11 @@
 # Javascript
 Bienvenue dans le cours de JavaScript pour les débutants ! JavaScript est un langage de programmation très puissant et populaire. Il est utilisé pour créer des sites web interactifs et des applications web.
 
-Dans ce cours, nous allons apprendre les bases de JavaScript et comment l'utiliser pour créer des sites web et des applications. Nous apprendrons :
+Dans ce cours, nous allons apprendre les bases de JavaScript et comment l'utiliser pour créer des sites web et des applications.
 
 ## Comment créer des variables en JavaScript et comment les utiliser.
 
-
-Pour créer une variable en JavaScript, vous devez d'abord déclarer la variable en utilisant le mot-clé «var». Vous pouvez ensuite attribuer une valeur à cette variable. Par exemple, pour créer une variable appelée «x» et lui attribuer la valeur 10, vous pouvez écrire:
-
-var x = 10;
-
-Vous pouvez ensuite utiliser cette variable dans votre code. Par exemple, vous pouvez l'utiliser pour afficher le résultat dans la console:
-
-console.log(x); // Affiche 10
+Les deux mots-clés sont utilisés pour déclarer des variables en JavaScript. La principale différence entre let et var est que let est une variable à portée de bloc, tandis que var est une variable à portée de fonction. Cela signifie que let est limité à la portée du bloc courant, tandis que var est limité à la portée de la fonction actuelle. Lorsqu'une variable est déclarée avec let ou var et n'est pas initialisée, elle a une valeur par défaut de undefined (à la différence des variables globales, qui ont une valeur par défaut de null).
 
 
 ## Les différents types de données en JavaScript et comment les manipuler.
