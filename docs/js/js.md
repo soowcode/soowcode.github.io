@@ -17,21 +17,23 @@ console.log(x); // Affiche 10
 
 ## Les différents types de données en JavaScript et comment les manipuler.
 
-Les différents types de données en JavaScript et comment les manipuler.
 
-JavaScript est un langage de programmation qui permet de manipuler différents types de données. Les principaux types de données manipulables sont les chaînes de caractères (String), les nombres (Number), les booléens (Boolean), les objets (Object), les tableaux (Array) et les fonctions (Function).
+1. Primitifs :
 
-Les chaînes de caractères (String) sont des valeurs qui contiennent des caractères alphanumériques, des espaces et des symboles. Elles peuvent être manipulées à l'aide des méthodes de manipulation de chaînes de caractères incluses dans JavaScript.
+- Nombres : valeurs numériques entières (1, 2, 3), flottants (1.2, 3.4), etc.
+- Chaînes de caractères : chaînes de caractères entre guillemets simples ou doubles ("foo", 'bar').
+- Booléens : vrai ou faux (true, false).
+- Symboles : uniques et immuables (Symbol()).
+- Null : valeur null (null).
+- Undefined : valeur indéfinie (undefined).
 
-Les nombres (Number) sont des valeurs qui peuvent être entiers ou à virgule flottante. Elles peuvent être manipulées à l'aide des méthodes de manipulation de nombres incluses dans JavaScript.
+2. Objets :
 
-Les booléens (Boolean) sont des valeurs qui peuvent prendre la valeur true ou false. Elles peuvent être manipulées à l'aide des méthodes de manipulation de booléens incluses dans JavaScript.
-
-Les objets (Object) sont des valeurs qui représentent une collection de propriétés et de méthodes. Les objets peuvent être manipulés à l'aide des méthodes d'objet incluses dans JavaScript.
-
-Les tableaux (Array) sont des valeurs qui contiennent une liste d'éléments. Les tableaux peuvent être manipulés à l'aide des méthodes de manipulation des tableaux incluses dans JavaScript.
-
-Les fonctions (Function) sont des valeurs qui permettent de définir des instructions à exécuter. Les fonctions peuvent être manipulées à l'aide des méthodes de manipulation des fonctions incluses dans JavaScript.
+- Objets : une collection de propriétés (Object({})).
+- Tableaux : une liste d'éléments (Array([])).
+- Fonctions : une fonction JavaScript (Function()).
+- Dates : une date dans un format spécifique (Date()).
+- Expressions régulières : une expression régulière (RegExp()).
 
 ## Les fonctions JavaScript et comment les utiliser.
 
