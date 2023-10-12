@@ -1,10 +1,10 @@
-# About US
-<h1 align="center">Bienvenue à SoowCode 👋</h1>
-<p>
+# About US 
   <a href="https://soowcode.github.io/" target="_blank">
     <img alt="SoowCode" src="https://img.shields.io/badge/website-yes-brightgreen.svg" />
   </a>
-</p>
+
+<h1 align="center">Bienvenue à SoowCode 👋</h1>
+
 
 
 Nous sommes comme des centaines d'autres bidouilleurs. Ici, nous partageons ce qui nous a été utile sous forme de tutoriels pour que vous puissiez en bénéficier.
