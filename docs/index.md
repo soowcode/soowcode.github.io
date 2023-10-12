@@ -6,7 +6,6 @@
   </a>
 </p>
 
-### 🏠 [SITE WEB](https://soowcode.github.io/)
 
 Nous sommes comme des centaines d'autres bidouilleurs. Ici, nous partageons ce qui nous a été utile sous forme de tutoriels pour que vous puissiez en bénéficier.
 
