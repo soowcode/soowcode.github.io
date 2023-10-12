@@ -1,20 +1,21 @@
 # About US
-
-<h1 align="center">👐 Bienvenue à SoowCode 👐 </h1>
+<h1 align="center">Bienvenue à SoowCode 👋</h1>
 <p>
   <a href="https://soowcode.github.io/" target="_blank">
     <img alt="SoowCode" src="https://img.shields.io/badge/website-yes-brightgreen.svg" />
   </a>
-   
 </p>
 
-Nous sommes comme de centaines d'autres débrouillards. Ici, nous partageons ce que nous avons rencontré comme difficultés sous forme de tutoriel pour que vous puissiez ne plus faire la même erreur ou au moins savoir comment résoudre le problème.
+### 🏠 [SITE WEB](https://soowcode.github.io/)
 
-Il y a plusieurs sujets, tous mélangés du langage de programmation au github actions en passant par Docker, MQTT (IoT) et les tests en python.
+Nous sommes comme des centaines d'autres bidouilleurs. Ici, nous partageons ce qui nous a été utile sous forme de tutoriels pour que vous puissiez en bénéficier.
 
-Ainsi la plupart des difficultés rencontrées sont répertoriées ici pour en faire un document pour les débrouillards.
+Nous abordons de nombreux sujets, mélangeant les langages de programmation, les actions GitHub, Docker, MQTT (IoT) et les tests en Python.
 
-<h2> Quelques tutoriels que vous trouverez ici!</h2>
+Ainsi, la plupart des astuces sont répertoriées ici pour en faire un document destiné aux bidouilleurs.
+
+## Quelques tutoriels que vous trouverez ici !
+
 Prgrammations | DevOps | Others      
 ------- | ---------------- | ---------- 
 <a  style="text-decoration: underline; color:black"  href="https://soowcode.github.io/python-/">PYTHON</a>  | <a  style="text-decoration: underline; color:black"  href="https://soowcode.github.io/docker-/">Docker</a>| <a  style="text-decoration: underline; color:black"  href="https://soowcode.github.io/MQTT/" >MQTT</a> 
@@ -39,4 +40,4 @@ Prgrammations | DevOps | Others
 
 <h2>Soutenez-nous !</h2>
 
-Laissez une ⭐️ [ici](https://github.com/sowousmane) si ce projet vous a été utile !
+Laissez-nous une ⭐️  [ici](https://github.com/sowousmane) si ce projet vous a été utile !
