@@ -1,40 +1,29 @@
-<h1 align="center">Bienvenue à SoowCode 👋</h1>
+<h1 align="center">Bienvenue sur SoowCode 👋</h1>
 <p>
   <a href="https://soowcode.github.io/" target="_blank">
-    <img alt="SoowCode" src="https://img.shields.io/badge/website-yes-brightgreen.svg" />
+    <img alt="SoowCode" src="https://img.shields.io/badge/site web-oui-brightgreen.svg" />
   </a>
-  
 </p>
 
-### 🏠 [WEBSITE](https://soowcode.github.io/)
+### 🏠 [SITE WEB](https://soowcode.github.io/)
 
-Une petite explication sur comment lancer ce projet en local et faire des contributions.  
-D'abord sachez que vous êtes les bienvenues. Nous sommes ravies de vous avoir parmi nos contributors.
+Voici un petit guide expliquant comment lancer ce projet en local et contribuer. Tout d'abord, sachez que vous êtes les bienvenus. Nous sommes ravis de vous compter parmi nos contributeurs.
 
-#### Installation de l'environnement de travaille
-```
+#### Installation de l'environnement de travail
+
+```sh
 git clone https://github.com/soowcode/soowcode.github.io.git
-
-```
-Entrez dans le dossier cloné
-
-```
 cd soowcode
-```
-Puis install les packages necessaires pour le lancement du projet que vous trouverez dans le fichier requierements.txt
-
-```
- pip install -r requirements.txt  
+pip install -r requirements.txt  
 ```
 
 #### Lancer le projet
 
-Se deplacer dans le dossier du projet cloner et lancer:
-```
+Déplacez-vous dans le dossier du projet cloné et exécutez :
+
+```sh
 mkdocs serve
 ```
-
-
 
 ## Contributeurs
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=soowcode/soowcode.github.io)
