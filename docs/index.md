@@ -1,9 +1,9 @@
 # About US 
-  <a href="https://soowcode.github.io/" target="_blank">
-    <img alt="SoowCode" src="https://img.shields.io/badge/website-yes-brightgreen.svg" />
-  </a>
 
-<h1 align="center">Bienvenue à SoowCode 👋</h1>
+
+<h1 align="center">   <a href="https://soowcode.github.io/" target="_blank">
+    <img alt="SoowCode" src="https://img.shields.io/badge/website-yes-brightgreen.svg" />
+  </a> Bienvenue à SoowCode 👋</h1>
 
 
 
