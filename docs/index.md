@@ -22,7 +22,7 @@ Ainsi, la plupart des astuces sont répertoriées ici pour en faire un document 
 | [Callback-function](https://soowcode.github.io/callback-function/) | [GitLab-CI](https://soowcode.github.io/gitlab_ci/) | [Good to know](https://soowcode.github.io/good-to-know/) |
 | [React-native](https://soowcode.github.io/react-native/) | [Git delete](https://soowcode.github.io/git-commands-utils/) | [Happy path and edge cases](https://soowcode.github.io/happy-path-and-edge-cases/) |
 | [Tests avec python](https://soowcode.github.io/tests/) | [Docker registry](https://soowcode.github.io/docker-registry/) | [Npm vs npx](https://soowcode.github.io/npm-vs-npx/) |
-|  | [Cockpit](https://thanos.savoirguinee.com/cockpit/) |  |
+|  | |[Cockpit](https://thanos.savoirguinee.com/cockpit/) |
 
 
 <h2> Author</h2>
