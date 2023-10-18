@@ -1,31 +1,27 @@
-# NPM vs NPX:
+## NPX vs NPM 
 
-## npx: un exécuteur de packages npm
+### NPX : Un exécuteur de packages npm
 
-NPX- Un outil pour exécuter des packages Node qui contient NPM version 5.2+
+NPX est un outil permettant d'exécuter des packages Node.js et nécessite NPM version 5.2+ pour fonctionner. 
 
-une commande lancer par NPX, NPX vérifiera si cette commande existe dans $PATH ou dans les binaires du projet local et l'exécutera.
+Lorsqu'une commande est lancée via NPX, il vérifie si cette commande existe dans le chemin d'accès ($PATH) ou dans les binaires du projet local, puis l'exécute.
 
 ```
 npx mes-packages
 ```
 
-Un autre avantage majeur de npxest la possibilité d'exécuter un package qui n'a pas été précédemment installé
+Un avantage majeur de NPX est sa capacité à exécuter un package qui n'a pas été préalablement installé.
 
 ```
 npx create-react-app my-app
 ```
 
-## NPM:
+### NPM :
 
-En lançant `npm install mes-packages` pourrait installer un paquet localement sur un certain projet
-
-Supposons maintenant que vous souhaitez que NodeJS exécute ce package à partir de la ligne de commande
-
-Il faudrait lancer la commande en précisant le chemin du package
+Lorsque vous lancez `npm install mes-packages`, cela installe un paquet localement dans un projet spécifique. Imaginons maintenant que vous vouliez exécuter ce package depuis la ligne de commande de Node.js. Vous devriez spécifier le chemin du package de la manière suivante :
 
 ```
 ./node_modules/.bin/mes-packages
 ```
 
-<a  style="text-decoration: underline; color:black"  href="https://docs.npmjs.com/about-npm"> plus d'information sur NPM</a>
+Pour en savoir plus sur NPM, consultez [la documentation NPM](https://docs.npmjs.com/about-npm).
