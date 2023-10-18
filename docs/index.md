@@ -14,17 +14,15 @@ Nous abordons de nombreux sujets, mélangeant les langages de programmation, les
 Ainsi, la plupart des astuces sont répertoriées ici pour en faire un document destiné aux bidouilleurs.
 
 <h1> Quelques tutoriels que vous trouverez ici !</h1>
-
-Prgrammations | DevOps | Others      
-------- | ---------------- | ---------- 
-<a  style="text-decoration: underline; color:black"  href="https://soowcode.github.io/python-/">PYTHON</a>  | <a  style="text-decoration: underline; color:black"  href="https://soowcode.github.io/docker-/">Docker</a>| <a  style="text-decoration: underline; color:black"  href="https://soowcode.github.io/MQTT/" >MQTT</a> 
-<a  style="text-decoration: underline; color:black"  href="https://soowcode.github.io/python-commandes/">Python commandes</a>  | <a  style="text-decoration: underline; color:black"  href="https://soowcode.github.io/docker-mysql/">Docker Mysql</a>        | <a  style="text-decoration: underline; color:black"  href="https://soowcode.github.io/Ubuntu-commandes/" >Ubuntu-commandes</a>       
-<a  style="text-decoration: underline; color:black"  href="https://soowcode.github.io/python-functions/">Python fonctions</a>   | <a  style="text-decoration: underline; color:black"  href="https://soowcode.github.io/github-actions/">GitHub-Actions</a> | <a  style="text-decoration: underline; color:black"  href="https://soowcode.github.io/apache-benchmark/">Apache-benchmark</a>
- <a  style="text-decoration: underline; color:black"  href="https://soowcode.github.io/callback-function/" >Callback-function</a>| <a  style="text-decoration: underline; color:black"  href="https://soowcode.github.io/gitlab_ci/">GitLab-CI</a>|<a  style="text-decoration: underline; color:black"  href="https://soowcode.github.io/good-to-know/">Good to know</a>
-<a  style="text-decoration: underline; color:black"  href="https://soowcode.github.io/react-native/">React-native</a>|  |<a  style="text-decoration: underline; color:black"  href="https://soowcode.github.io/happy-path-and-edge-cases/" >Happy path and edge cases</a>
-<a  style="text-decoration: underline; color:black"  href="https://soowcode.github.io/spring-boot/" >Spring-boot</a> |  |<a  style="text-decoration: underline; color:black"  href="https://thanos.savoirguinee.com/cockpit/">Cockpit</a>
-<a  style="text-decoration: underline; color:black"  href="https://soowcode.github.io/tests/">Tests avec python</a> |  | <a  style="text-decoration: underline; color:black"  href="https://soowcode.github.io/npm-vs-npx/">Npm vs npx</a>
-
+| Prgrammations                                      | DevOps                               | Others                                    |
+|-----------------------------------------------------|---------------------------------------|--------------------------------------------|
+| [PYTHON](https://soowcode.github.io/python-/)        | [Docker](https://soowcode.github.io/docker-/)    | [MQTT](https://soowcode.github.io/MQTT/)    |
+| [Python commandes](https://soowcode.github.io/python-commandes/) | [Docker Mysql](https://soowcode.github.io/docker-mysql/) | [Ubuntu-commandes](https://soowcode.github.io/Ubuntu-commandes/) |
+| [Python fonctions](https://soowcode.github.io/python-functions/) | [GitHub-Actions](https://soowcode.github.io/github-actions/) | [Apache-benchmark](https://soowcode.github.io/apache-benchmark/) |
+| [Callback-function](https://soowcode.github.io/callback-function/) | [GitLab-CI](https://soowcode.github.io/gitlab_ci/) | [Good to know](https://soowcode.github.io/good-to-know/) |
+| [React-native](https://soowcode.github.io/react-native/) | [Git delete](https://soowcode.github.io/git-commands-utils/) | [Happy path and edge cases](https://soowcode.github.io/happy-path-and-edge-cases/) |
+| [Tests avec python](https://soowcode.github.io/tests/) | [Docker registry](https://soowcode.github.io/docker-registry/) | [Npm vs npx](https://soowcode.github.io/npm-vs-npx/) |
+|  | [Cockpit](https://thanos.savoirguinee.com/cockpit/) |  |
 
 
 <h2> Author</h2>
