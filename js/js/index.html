@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Javascript - SoowCode</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Javascript";
+        var mkdocs_page_input_path = "js/js.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> SoowCode
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">About US</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../MQTT/">MQTT</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../Ubuntu-Oh-my-zsh/">Oh My Zsh</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../Ubuntu-commandes/">Ubuntu utilities</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../alerte_manager/">Alerte manager</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../apache-benchmark/">ApacheBench</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../callback-function/">Fonction callback ou anonyme</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../cockpit/">Cockpit</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../docker-/">Docker</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../docker-mysql/">Docker-MySQL</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../docker-registry/">Docker Registry</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../git-commands-utils/">Git Delete 😇</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../github-actions/">Github-actions</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../gitlab_ci/">Gitlab-ci</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../good-to-know/">Good to know</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../happy-path-and-edge-cases/">Happy path and edge cases</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../npm-vs-npx/">Npm vs npx</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../python-/">Python installation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../python-commandes/">Python commandes utiles</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../python-functions/">Python fonctions</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../react-native/">React Native</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../tests/">Tests logiciels</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Js</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Javascript</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#comment-creer-des-variables-en-javascript-et-comment-les-utiliser">Comment créer des variables en JavaScript et comment les utiliser.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#les-differents-types-de-donnees-en-javascript-et-comment-les-manipuler">Les différents types de données en JavaScript et comment les manipuler.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#les-fonctions-javascript-et-comment-les-utiliser">Les fonctions JavaScript et comment les utiliser.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#les-structures-de-controle-et-comment-les-utiliser-pour-creer-des-boucles-et-des-conditions">Les structures de contrôle et comment les utiliser pour créer des boucles et des conditions.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#les-objets-et-comment-les-utiliser-pour-creer-des-structures-de-donnees-complexes">Les objets et comment les utiliser pour créer des structures de données complexes.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#comment-utiliser-le-dom-document-object-model-pour-creer-des-interfaces-utilisateur-interactives">Comment utiliser le DOM (Document Object Model) pour créer des interfaces utilisateur interactives.</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#elements-du-dom-list">éléments du DOM list</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#les-bibliotheques-et-frameworks-javascript-et-comment-les-utiliser">Les bibliothèques et frameworks JavaScript et comment les utiliser.</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#les-bibliotheques-js-liste">Les bibliothèques js liste</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#les-framework-js-liste">Les framework js liste</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#comment-deboguer-et-tester-votre-code-javascript">Comment déboguer et tester votre code JavaScript.</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">SoowCode</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Js</li>
+      <li class="breadcrumb-item active">Javascript</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="javascript">Javascript</h1>
+<p>Bienvenue dans le cours de JavaScript pour les débutants ! JavaScript est un langage de programmation très puissant et populaire. Il est utilisé pour créer des sites web interactifs et des applications web.</p>
+<p>Dans ce cours, nous allons apprendre les bases de JavaScript et comment l'utiliser pour créer des sites web et des applications.</p>
+<h2 id="comment-creer-des-variables-en-javascript-et-comment-les-utiliser">Comment créer des variables en JavaScript et comment les utiliser.</h2>
+<p>Les deux mots-clés sont utilisés pour déclarer des variables en JavaScript. La principale différence entre let et var est que let est une variable à portée de bloc, tandis que var est une variable à portée de fonction. Cela signifie que let est limité à la portée du bloc courant, tandis que var est limité à la portée de la fonction actuelle. Lorsqu'une variable est déclarée avec let ou var et n'est pas initialisée, elle a une valeur par défaut de undefined (à la différence des variables globales, qui ont une valeur par défaut de null).</p>
+<h2 id="les-differents-types-de-donnees-en-javascript-et-comment-les-manipuler">Les différents types de données en JavaScript et comment les manipuler.</h2>
+<ol>
+<li>
+<p>Primitifs :</p>
+</li>
+<li>
+<p>Nombres : valeurs numériques entières (1, 2, 3), flottants (1.2, 3.4), etc.</p>
+</li>
+<li>Chaînes de caractères : chaînes de caractères entre guillemets simples ou doubles ("foo", 'bar').</li>
+<li>Booléens : vrai ou faux (true, false).</li>
+<li>Symboles : uniques et immuables (Symbol()).</li>
+<li>Null : valeur null (null).</li>
+<li>
+<p>Undefined : valeur indéfinie (undefined).</p>
+</li>
+<li>
+<p>Objets :</p>
+</li>
+<li>
+<p>Objets : une collection de propriétés (Object({})).</p>
+</li>
+<li>Tableaux : une liste d'éléments (Array([])).</li>
+<li>Fonctions : une fonction JavaScript (Function()).</li>
+<li>Dates : une date dans un format spécifique (Date()).</li>
+<li>Expressions régulières : une expression régulière (RegExp()).</li>
+</ol>
+<h2 id="les-fonctions-javascript-et-comment-les-utiliser">Les fonctions JavaScript et comment les utiliser.</h2>
+<p>JavaScript est un langage de programmation qui permet aux développeurs d'ajouter des fonctionnalités interactives à des sites Web et des applications. Les fonctions JavaScript sont des blocs de code qui effectuent des actions spécifiques et qui peuvent être réutilisés plusieurs fois dans un programme.</p>
+<p>Pour utiliser une fonction JavaScript, vous devez la déclarer en spécifiant un nom et un ensemble d'arguments. Vous pouvez ensuite appeler la fonction pour exécuter le code défini à l'intérieur. Les arguments sont des valeurs que vous pouvez passer à la fonction qui peuvent être utilisées pour modifier son comportement.</p>
+<p>Par exemple, la fonction Math.abs() est une fonction JavaScript qui calcule la valeur absolue d'un nombre donné. Vous pouvez l'utiliser en l'appelant avec un argument, comme ceci :</p>
+<p>let x = Math.abs(-5);</p>
+<p>Cela affectera la variable x à la valeur absolue, 5.</p>
+<p>Les fonctions JavaScript peuvent également retourner des valeurs, ce qui signifie qu'elles peuvent être utilisées dans des expressions. Par exemple, vous pouvez utiliser la fonction Math.min() pour calculer le plus petit nombre d'une liste de nombres :</p>
+<p>let smallest = Math.min(4, 6, 8, 10);</p>
+<p>Cela affectera la variable smallest à la valeur 4.</p>
+<p>Créer une fonction JavaScript est très simple. La syntaxe est la suivante:</p>
+<pre><code>function nomDeFonction(paramètre1, paramètre2, etc.) {
+// Instructions dans la fonction
+}
+</code></pre>
+<p>Par exemple, voici une fonction qui prend deux nombres en paramètres et retourne leur somme:</p>
+<pre><code>function addNumbers(a, b) {
+  return a + b;
+}
+</code></pre>
+<p>Pour l'utiliser, vous pouvez simplement appeler la fonction en fournissant les arguments appropriés:</p>
+<pre><code>let result = addNumbers(2, 3);
+// result vaut 5
+</code></pre>
+<h2 id="les-structures-de-controle-et-comment-les-utiliser-pour-creer-des-boucles-et-des-conditions">Les structures de contrôle et comment les utiliser pour créer des boucles et des conditions.</h2>
+<p>Les structures de contrôle en javascript</p>
+<ul>
+<li>
+<p>Les conditions : Elles permettent d’exécuter ou non une ou plusieurs instructions selon le résultat d’une comparaison.</p>
+</li>
+<li>
+<p>Les boucles : Elles permettent de répéter un certain nombre de fois une instruction ou un bloc d’instructions.</p>
+</li>
+<li>
+<p>Les switch : Elles permettent d’exécuter un bloc d’instructions en fonction d’une valeur donnée.</p>
+</li>
+<li>
+<p>Les fonctions : Elles permettent d’exécuter un bloc d’instructions à partir d’un seul appel.</p>
+</li>
+</ul>
+<h2 id="les-objets-et-comment-les-utiliser-pour-creer-des-structures-de-donnees-complexes">Les objets et comment les utiliser pour créer des structures de données complexes.</h2>
+<p>Les objets sont une des principales structures de données utilisées en JavaScript. Ils peuvent être utilisés pour stocker des données complexes, telles que des tableaux, des objets imbriqués, des chaînes et des nombres. Les objets JavaScript sont très puissants car ils peuvent être utilisés pour stocker des données sous forme de clés et de valeurs. Les objets peuvent également être imbriqués et manipulés de manière dynamique. Les objets peuvent être utilisés pour créer des structures de données complexes, telles que des listes, des tableaux multidimensionnels, des arbres et des graphes. Les objets sont également très utiles lors de l'utilisation d'API et de bibliothèques tierces, car ils peuvent être utilisés pour stocker et organiser des informations et des métadonnées
+1. Strings
+2. Nombres
+3. Booleens
+4. Null
+5. Symbole
+6. Tableaux
+7. Objet
+8. Fonctions
+9. Date
+10. Erreurs</p>
+<h2 id="comment-utiliser-le-dom-document-object-model-pour-creer-des-interfaces-utilisateur-interactives">Comment utiliser le DOM (Document Object Model) pour créer des interfaces utilisateur interactives.</h2>
+<p>Le DOM est un modèle orienté objet qui permet aux développeurs de créer des interfaces utilisateur interactives. Il peut être utilisé pour créer des pages web dynamiques et intégrées aux applications web. </p>
+<p>Le DOM permet aux développeurs d'accéder aux éléments HTML et XML, d'effectuer des modifications et de créer des événements et des interactions. Les développeurs peuvent donc créer des interfaces utilisateur interactives en ajoutant des éléments HTML et XML à une page web et en attachant des fonctionnalités et des comportements à ces éléments.</p>
+<p>Par exemple, les développeurs peuvent créer des événements sur des boutons, des liens et des images pour permettre à l'utilisateur de cliquer et de naviguer sur la page web. Les développeurs peuvent également ajouter des fonctionnalités avancées telles</p>
+<h3 id="elements-du-dom-list">éléments du DOM list</h3>
+<p>//Affiche tous les éléments du DOM list
+document.querySelectorAll("*");</p>
+<h2 id="les-bibliotheques-et-frameworks-javascript-et-comment-les-utiliser">Les bibliothèques et frameworks JavaScript et comment les utiliser.</h2>
+<h3 id="les-bibliotheques-js-liste">Les bibliothèques js liste</h3>
+<ol>
+<li>React.js</li>
+<li>jQuery</li>
+<li>AngularJS</li>
+<li>Vue.js</li>
+<li>Node.js</li>
+<li>Polymer.js</li>
+<li>Backbone.js</li>
+<li>Ember.js</li>
+<li>Knockout.js</li>
+<li>Socket.io</li>
+</ol>
+<h3 id="les-framework-js-liste">Les framework js liste</h3>
+<ol>
+<li>Angular</li>
+<li>React</li>
+<li>Vue</li>
+<li>Ember</li>
+<li>Meteor</li>
+<li>Svelte</li>
+<li>Backbone</li>
+<li>Aurelia</li>
+<li>Polymer</li>
+<li>Knockout</li>
+</ol>
+<h2 id="comment-deboguer-et-tester-votre-code-javascript">Comment déboguer et tester votre code JavaScript.</h2>
+<ol>
+<li>
+<p>Utiliser des messages d'erreur et des alertes: </p>
+</li>
+<li>
+<p>Utiliser les outils de débogage intégrés: De nombreux navigateurs Web modernes comprennent des outils de débogage intégrés pour vous aider à déboguer votre code. </p>
+</li>
+<li>
+<p>Utiliser des outils externes: Il existe des outils externes dédiés à la déboguation de JavaScript tels que Firebug et Chrome Developer Tools. </p>
+</li>
+<li>
+<p>Utiliser des bibliothèques de débogage: Par exemple, vous pouvez utiliser la bibliothèque de débogage JavaScript Node.js pour trouver des erreurs, surveiller des variables et tracer des lignes de code.</p>
+</li>
+</ol>
+<p>Ce cours est conçu pour les débutants. Nous ne couvrirons pas les aspects avancés de JavaScript, mais vous donnerons les bases pour commencer à apprendre le langage.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../tests/" class="btn btn-neutral float-left" title="Tests logiciels"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../tests/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../theme_extra.js"></script>
+    <script src="../theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
