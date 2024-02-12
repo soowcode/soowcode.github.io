@@ -1,3 +1,4 @@
+ netstat -talpneu | grep 443
 les objets kubenetes
 
 Les principaux objets Kubernetes sont les pods, les services, les déploiements, les ingress, les namespaces, les configmaps et les secrets. 
