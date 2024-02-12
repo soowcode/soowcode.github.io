@@ -104,7 +104,7 @@ Par exemple, les développeurs peuvent créer des événements sur des boutons, 
 document.querySelectorAll("*");
 
 ## Les bibliothèques et frameworks JavaScript et comment les utiliser.
- ### Les bibliothèques js liste
+### Les bibliothèques js liste
 
 1. React.js
 2. jQuery
