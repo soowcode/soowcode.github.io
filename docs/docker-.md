@@ -3,9 +3,8 @@ title: Docker
 position: 1
 ---
 # Introduction
-
-Pour avoir seulement les commandes à executer, rendez-vous ici.[SoowCode-tech](https://github.com/soowcode/docs-sorus)  
-Sinon un peu d'explication :)
+ 
+Un peu d'explication :)
 <div style="text-align:center">
 <img src="../../img/docker.gif" alt="drawing" style="width:45%; height:45%"/>
 </div>
@@ -22,7 +21,7 @@ Docker est un système d'exploitation pour conteneurs.
 
 </div>
  
-😲 ** Tu nous le demande? bon bahh on ne sait pas**  
+😲 **Tu nous le demande? bon bahh on ne sait pas**  
 
 Docker permet:
 
@@ -152,7 +151,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 Rappelons que ce fichier contient le docker run commande
 
-** Exemple de docker-compose **
+**Exemple de docker-compose**
 
 ```
 version: "3.9"
