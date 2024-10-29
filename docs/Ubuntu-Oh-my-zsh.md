@@ -27,7 +27,7 @@ Maintenant votre machine est prête à installer Oh My Zsh
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
-Après ceci, vous avez Oh My Zsh est bien installé, mais sa meilleure utilisation est l'auto compétition, l'historique et le highlighting pour cela, personnalisons Oh My Zsh.
+Après ceci, vous avez Oh My Zsh bien installé, mais sa meilleure utilisation est l'auto-compétition, l'historique et le highlighting pour cela, personnalisons Oh My Zsh.
 ### Personnalisation
 
 Télécharger zsh-autosuggestions avec la commande suivante
