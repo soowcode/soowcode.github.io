@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>ApacheBench - SoowCode</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "ApacheBench";
+        var mkdocs_page_input_path = "apache-benchmark.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> SoowCode
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">About US</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../MQTT/">MQTT</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ubuntu-Oh-my-zsh/">Oh My Zsh</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ubuntu-commandes/">Ubuntu utilities</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../alerte_manager/">Alerte manager</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">ApacheBench</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#fonctionnement">Fonctionnement</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#fonctionnalites-dapachebench">Fonctionnalités d'ApacheBench</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#installation">Installation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#utilisation">Utilisation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pourquoi-stresser-son-site">Pourquoi stresser son site?</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#conclusion">Conclusion</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../callback-function/">Fonction callback ou anonyme</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cockpit/">Cockpit</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docker-/">Docker</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docker-mysql/">Docker-MySQL</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docker-registry/">Docker Registry</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../git-commands-utils/">Git Delete 😇</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../github-actions/">Github-actions</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../gitlab_ci/">Gitlab-ci</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../good-to-know/">Good to know</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../happy-path-and-edge-cases/">Happy path and edge cases</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../npm-vs-npx/">Npm vs npx</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python-/">Python installation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python-commandes/">Python commandes utiles</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python-functions/">Python fonctions</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../react-native/">React Native</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../tests/">Tests logiciels</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Js</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../js/js/">Javascript</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">SoowCode</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">ApacheBench</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="apachebench">ApacheBench</h1>
+<div style="text-align:center">
+<img src="../../img/apache-bench.png" alt="drawing" style="width:100; height:100px; margin-bottom:5% "/>
+
+</div>
+
+<p>ApacheBench (ab est le vrai nom du fichier programme ) est un programme informatique en ligne de commande à thread unique utilisé pour l'analyse comparative (mesure des performances) des serveurs Web HTTP .</p>
+<p><strong>Un peu d'histoire?</strong><br />
+À l'origine, il était utilisé pour tester le serveur HTTP Apache , mais il est suffisamment générique pour tester n'importe quel serveur Web prenant en charge les versions de protocole HTTP/1.0 ou HTTP/1.1.<br />
+L'<strong>ab</strong> outil est écrit en C et il est fourni avec la distribution source standard d'Apache, et comme le serveur Web Apache lui-même, il s'agit d'un logiciel libre, open source et distribué selon les termes de la licence Apache <a  href="https://en.wikipedia.org/wiki/ApacheBench">source</a>.</p>
+<h2 id="fonctionnement">Fonctionnement</h2>
+<p>Dans cette session nous ne parlerons que de certaines fonctionnalités, comment installer ab, un exemple d'utilisation et pourquoi faire une telle tâche.</p>
+<h3 id="fonctionnalites-dapachebench">Fonctionnalités d'ApacheBench</h3>
+<ul>
+<li>Un logiciel open source, donc disponible gratuitement.</li>
+<li>Un simple programme informatique en ligne de commande.</li>
+<li>Un tester de charge et de performance uniquement pour le serveur Web - HTTP ou HTTPS.</li>
+<li>Un outil indépendant de votre plate-forme. On peut l'uitliser sur Linux, sur Windows ou MacOs.</li>
+</ul>
+<h3 id="installation">Installation</h3>
+<p>Pour installer apache2-utils tapez la commande</p>
+<pre><code>sudo apt-get install apache2-utils
+</code></pre>
+<p>Notez que cela n'a pas besoin d'être installé sur le même serveur sur lequel vous souhaitez exécuter le test. Vous pouvez l'installer même sur votre bureau local (pour moi Ubuntu) et exécuter le test vers une URL spécifique</p>
+<h3 id="utilisation">Utilisation</h3>
+<pre><code>ab -c 100 -n 500 -r https://mon-site.com/
+</code></pre>
+<p><strong>-c:</strong> <i> le nombre de requêtes multiples à exécuter à la fois.</i></p>
+<p><strong>-n:</strong> <i> le nombre de requêtes à effectuer pour la session de benchmarking.</i></p>
+<p><strong>-r:</strong> <i> signifie ne quitte pas en cas d'erreur de réception de socket.</i></p>
+<p>Dans notre cas, la requête fera simultanément 100 requêtes/seconde et en fera au total 500.</p>
+<h3 id="pourquoi-stresser-son-site">Pourquoi stresser son site?</h3>
+<p>Drôle hein ? Mais je suis sérieuse il faut simuler un grand nombre de flux d'utilisation de son site pour éviter que son site ne se plante.</p>
+<p>Pour cela vous pouvez utiliser l'outil de test des performances du serveur HTTP Apache</p>
+<p>Pour plus d'info <a href="https://httpd.apache.org/docs/2.4/programs/ab.html">apache-bench-docs</a></p>
+<h2 id="conclusion">Conclusion</h2>
+<div style="text-align:center">
+<img src="../../img/happy.gif" alt="drawing" style="width:100; height:100px; margin-bottom:5% "/>
+
+</div>
+<p>Nous arrivons à la fin de notre ApacheBench tuto 😁, je vous invite donc de voir <a style="text-decoration: underline; color:black" href=" https://ourcodeworld.com/articles/read/957/how-to-run-a-stress-test-to-your-apache-server-in-ubuntu-18-04">ce article.</a><br />
+Car, ceci n'est qu'une introduction à ApacheBench, pour plus d'informations visitez le site <a style="text-decoration: underline; color:black"  href="https://httpd.apache.org/docs/2.4/programs/ab.html"> ApacheBench </a>.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../alerte_manager/" class="btn btn-neutral float-left" title="Alerte manager"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../callback-function/" class="btn btn-neutral float-right" title="Fonction callback ou anonyme">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../alerte_manager/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../callback-function/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

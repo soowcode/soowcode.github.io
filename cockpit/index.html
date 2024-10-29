@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Cockpit - SoowCode</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Cockpit";
+        var mkdocs_page_input_path = "cockpit.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> SoowCode
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">About US</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../MQTT/">MQTT</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ubuntu-Oh-my-zsh/">Oh My Zsh</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ubuntu-commandes/">Ubuntu utilities</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../alerte_manager/">Alerte manager</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../apache-benchmark/">ApacheBench</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../callback-function/">Fonction callback ou anonyme</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Cockpit</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#focntionnement">Focntionnement</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#installation-sur-ubuntu">Installation sur Ubuntu</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#demarrage-de-cockpit">Démarrage de cockpit</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#verification-du-status">Vérification du status</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#docker-et-cockpit">Docker et cockpit</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cockpit-et-metrics">Cockpit et metrics</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#conclusion">Conclusion</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docker-/">Docker</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docker-mysql/">Docker-MySQL</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docker-registry/">Docker Registry</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../git-commands-utils/">Git Delete 😇</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../github-actions/">Github-actions</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../gitlab_ci/">Gitlab-ci</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../good-to-know/">Good to know</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../happy-path-and-edge-cases/">Happy path and edge cases</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../npm-vs-npx/">Npm vs npx</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python-/">Python installation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python-commandes/">Python commandes utiles</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python-functions/">Python fonctions</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../react-native/">React Native</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../tests/">Tests logiciels</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Js</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../js/js/">Javascript</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">SoowCode</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Cockpit</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="cockpit">Cockpit</h1>
+<div style="text-align:center">
+<img src="../../img/cockpit.png" alt="drawing" style="width:30%; height:30%"/>
+</div>
+<h2 id="introduction">Introduction</h2>
+<p>Celui qui vous aide à piloter vos machines sans avoir à connaitre toutes les commandes Lunix.
+Vous avez envie d'administrer vos machines sans connaitre de commandes Lunix, vous avez envie de vous amuser sur un interface web sans passer par un terminal sur la machine ou encore avez envie d'utiliser un terminal sur votre navigateur sans revenir sur votre terminal en local? Alors utiliser cockpit!l.</p>
+<h2 id="focntionnement">Focntionnement</h2>
+<p>Cockpit est une interface graphique web pour serveurs, destinée à tous(debutants, confirmé et administrateur systeme sous Lunix), notamment ceux qui sont :
+Grâce à Cockpit toute une équipe d'administrateurs peut gérer un système de la manière la plus simple.
+Avec cockpit vous pouvez verifier: vos containers, votre CPU, votre RAM, disque dur,...</p>
+<h3 id="installation-sur-ubuntu">Installation sur Ubuntu</h3>
+<p>L'installation est l'une des plus simple il suffit de taper la commande</p>
+<pre><code>sudo apt install cockpit
+</code></pre>
+<h3 id="demarrage-de-cockpit">Démarrage de cockpit</h3>
+<p>Une fois l'installation terminée lancer votre cockpit avec la commande</p>
+<pre><code>sudo service cockpit start
+</code></pre>
+<div style="text-align:center">
+    <img src="../../img/first_page.png" alt="drawing" />
+    <p style="color:grey"> interface de cockpit</p>
+</div>
+<h3 id="verification-du-status">Vérification du status</h3>
+<p>Une fois lancé vous pouvez vérifier son status avec la command:</p>
+<pre><code>sudo service cockpit status
+</code></pre>
+<h3 id="docker-et-cockpit">Docker et cockpit</h3>
+<p>Vous avez la possibilité de vérifier que vos containers sont entrains de tourner ou sont down.</p>
+<p>Il se comporte comme <strong>portainer</strong> mais en plus avancé car il contient des graphes et beacoups d'autres outils.</p>
+<p>Pour cela installer sur votre machine le docker-cockpit.</p>
+<pre><code>sudo apt-get -y install cockpit-docker
+
+</code></pre>
+<p>Redemarrer le socket docker pour appliquer les changements</p>
+<pre><code>sudo systemctl restart cockpit.socket
+</code></pre>
+<div style="text-align:center">
+    <img src="../../img/container.png" alt="drawing" />
+    <p style="color:grey"> interface de cockpit</p>
+</div>
+<h3 id="cockpit-et-metrics">Cockpit et metrics</h3>
+<p>Lecture et diffusion de données de métriques.</p>
+<p>Les métriques concernant le système peuvent être extraites de plusieurs sources à l'aide de cockpit.metrics(). On peut exploiter les données des metrics avec les fonctions cockpit.series() et cockpit.grid().</p>
+<pre><code>metrics = cockpit.metrics(intervalle, options, cache)
+</code></pre>
+<p>Pour plus d'informations, je vous invite à visitez le site oficiel de <a style="text-decoration: underline; color:black" href="https://cockpit-project.org/guide/latest/cockpit-metrics.html"> cockpit</a></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Vous pouvez désormais gérer facilement les conteneurs Docker à partir de votre navigateur Web avec une interface facile à utiliser !</p>
+<p>Vous pouvez également monitorer votre machine avec cockpit sans souci !</p>
+<p><strong>Sources:</strong><br />
+<a href="https://cockpit-project.org/guide/latest/development"> Site officielle de cockpit</a><br />
+<a href="https://www.hostwinds.com/tutorials/installing-and-using-cockpit-docker-linux-vps"> Hostwinds</a><br />
+<a href="http://redhatgov.io/workshops/security_containers/images/cockpit.png">logo</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../callback-function/" class="btn btn-neutral float-left" title="Fonction callback ou anonyme"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../docker-/" class="btn btn-neutral float-right" title="Docker">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../callback-function/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../docker-/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

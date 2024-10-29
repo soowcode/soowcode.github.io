@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>React Native - SoowCode</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "React Native";
+        var mkdocs_page_input_path = "react-native.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> SoowCode
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">About US</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../MQTT/">MQTT</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ubuntu-Oh-my-zsh/">Oh My Zsh</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ubuntu-commandes/">Ubuntu utilities</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../alerte_manager/">Alerte manager</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../apache-benchmark/">ApacheBench</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../callback-function/">Fonction callback ou anonyme</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cockpit/">Cockpit</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docker-/">Docker</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docker-mysql/">Docker-MySQL</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docker-registry/">Docker Registry</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../git-commands-utils/">Git Delete 😇</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../github-actions/">Github-actions</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../gitlab_ci/">Gitlab-ci</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../good-to-know/">Good to know</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../happy-path-and-edge-cases/">Happy path and edge cases</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../npm-vs-npx/">Npm vs npx</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python-/">Python installation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python-commandes/">Python commandes utiles</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python-functions/">Python fonctions</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">React Native</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#demarrer">Démarrer</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#installe-nodejs">Installe NodeJs</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#verifier-linstallation">Verifier l'installation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#installe-expo-cli">Installe Expo CLI</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#creer-un-projet">Créer un projet</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#demarrer-lapplication">Demarrer l'application</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#les-composants-capitaux">Les composants capitaux</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#1-les-vuesview">1- Les Vues(View)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2-le-composant-text">2- Le composant Text</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#3-le-composant-stylesheet">3- Le composant StyleSheet</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#4-le-composant-textinput">4- Le composant textInput</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#props-et-state">Props et State</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#5-le-composant-image">5- Le composant Image</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#soit-from-assets">Soit from assets:</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#soit-from-une-url">soit from une URL:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#6-le-composant-scrollview">6- Le composant ScrollView</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#7-le-composant-flatlist">7- Le composant FlatList</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#navigation">Navigation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#installation">Installation​</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../tests/">Tests logiciels</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Js</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../js/js/">Javascript</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">SoowCode</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">React Native</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="react-native">React Native</h1>
+<p>Hey encore une chose de decouvert &#128513;</p>
+<p>Parlons React mais pas just React mais native qui signifie que notre application tournera sur ios et android car React Native est cross-plateform.</p>
+<p>J'ai decouvert React et je partage l'aventure avec vous &#129335;.</p>
+<p>c'était un monde dans une planete &#127776; lointaine mais proche de Angular.</p>
+<hr />
+<h2 id="demarrer">Démarrer</h2>
+<hr />
+<p>Hi &#128075;!!!! Alors installons tout ce dont on a besoin pour commencer</p>
+<h3 id="installe-nodejs">Installe NodeJs</h3>
+<pre><code>sudo apt install nodejs
+</code></pre>
+<h3 id="verifier-linstallation">Verifier l'installation</h3>
+<pre><code>node --version
+</code></pre>
+<p><img src="../../img/node-version.png"   /></p>
+<h3 id="installe-expo-cli">Installe Expo CLI</h3>
+<p> J'ai decouvert ce framwork "expo" qui est magnifique, je vous mets le lien &#128073; <a  style="text-decoration: underline; color:black"  href="https://docs.expo.dev/">EXPO</a> </p>
+
+<pre><code>npm install --global expo-cli
+
+</code></pre>
+<h3 id="creer-un-projet">Créer un projet</h3>
+<pre><code>
+expo init books
+
+</code></pre>
+<h3 id="demarrer-lapplication">Demarrer l'application</h3>
+<pre><code>
+expo start
+
+</code></pre>
+<hr />
+<h2 id="les-composants-capitaux">Les composants capitaux</h2>
+<hr />
+<p>Nous avons 7 composants principaux<br />
+Un <strong>composant</strong> est une classe(transmettre des props) ou une fonction(mais elle renvoie rarement des props).</p>
+<p>La manière la plus simple de definir un component est de créer une fonction JavaScript.</p>
+<p>Nous appelons ces composants "composants de fonction" car il s'agit littéralement de fonctions JavaScript.</p>
+<pre><code>
+import React from &quot;react&quot;;
+import { Text, View } from &quot;react-native&quot;;
+
+const HelloWorldApp = () =&gt; {
+  return (
+    &lt;View
+      style={{
+        flex: 1,
+        justifyContent: &quot;center&quot;,
+        alignItems: &quot;center&quot;,
+      }}
+    &gt;
+      &lt;Text&gt;Hello, world!&lt;/Text&gt;
+    &lt;/View&gt;
+  );
+};
+
+
+export default HelloWorldApp;
+
+</code></pre>
+<p>Les deux composants ci-dessus sont équivalents du point de vue de React.</p>
+<pre><code>import React, { Component } from &quot;react&quot;;
+import { Text, View } from &quot;react-native&quot;;
+
+class HelloWorldApp extends Component {
+  render() {
+    return (
+      &lt;View
+        style={{
+          flex: 1,
+          justifyContent: &quot;center&quot;,
+          alignItems: &quot;center&quot;,
+        }}
+      &gt;
+        &lt;Text&gt;Hello, world!&lt;/Text&gt;
+      &lt;/View&gt;
+    );
+  }
+}
+
+export default HelloWorldApp;
+
+</code></pre>
+<h3 id="1-les-vuesview">1- Les Vues(View)</h3>
+<ul>
+<li>Les <strong>vues</strong> ici sont appellées "user interface view sur Ios et android view sur android", sachez aussi que dans cette planette il faut décomposer son application en composants  &#9888;&#65039; tout en évitant d'avoir une panopluie de composant. Car, ceci est déconseillé.</li>
+</ul>
+<p><strong>Style in line</strong>
+signifie que nous aurons deux accolades "{{}}" au niveau de style et on ne va pas l'écrire sur plusieurs lignes
+La première signifie JavaScript et le second car c'est en inline</p>
+<pre><code>//Dans App.js
+import React from &quot;react&quot;;
+import { Text, View } from &quot;react-native&quot;;
+
+const App = () =&gt; {
+  return &lt;View style={{ borderWidth: 1, height: 150, width: 150 }}&gt;&lt;/View&gt;;
+};
+export default App;
+
+</code></pre>
+<p>Bon écoutez je ne vais pas faire un cours, donc je vous donne encore un truc que je viens juste de capter.</p>
+<h5 style="color:green">Le mot clé Export</h5>
+
+<p>Le mots clé <strong>"export"</strong> pour utiliser un composant dans un autre il faut que dans le fichier où est defini le component l'exporter après sa definition, et l'importer dans le fichier où on l'utilise.</p>
+<p>Ehh bhenn je viens de dire une chose truvial là &#128517; mais bon voici un exmple</p>
+<p><img src="../../img/component.gif"/></p>
+<h3 id="2-le-composant-text">2- Le composant Text</h3>
+<p>React n'accept pas les textes brutes donc il faut un composant texte pour la manipulation de texte</p>
+<pre><code>
+//Dans App.js
+&lt;Text style={{ color:&quot;white&quot;, fontSize:20, fontWeight:&quot;bold&quot;}}&gt;Bonjour Monsieur&lt;/Text&gt;
+
+</code></pre>
+<h3 id="3-le-composant-stylesheet">3- Le composant StyleSheet</h3>
+<p>comme son nom l'indique il permet d'ecrire du css plus stylé &#128526;</p>
+<pre><code>//Dans App.js
+import React from &quot;react&quot;;
+import { Text, View, StyleSheet } from &quot;react-native&quot;;
+
+const App = () =&gt; {
+  return (
+    &lt;View style={styles.container}&gt;
+      &lt;Text style={styles.text}&gt;Bonjour Monsieur&lt;/Text&gt;
+    &lt;/View&gt;
+  );
+};
+const styles = StyleSheet.create({
+  container: {
+    borderWidth: 1,
+    height: &quot;100%&quot;,
+    width: &quot;100%&quot;,
+    backgroundColor: &quot;green&quot;,
+    justifyContent: &quot;center&quot;,
+    alignItems: &quot;center&quot;,
+  },
+  text: {
+    color: &quot;white&quot;,
+    fontSize: 20,
+    fontWeight: &quot;bold&quot;,
+  },
+});
+export default App;
+
+</code></pre>
+<p><img src="../../img/stylesheet.png"/></p>
+<h3 id="4-le-composant-textinput">4- Le composant textInput</h3>
+<div class="warning">Un composant sans enfant&#128551;? Ehh oui c'est quand on le ferme juste à la fin avec un "/" </div>
+<p>Au fur et à mesure qu'on ecrit dans un champs de saisie React fait la mise à jour donc pour eviter d'effacer ce que l'on écrit on utilise state.</p>
+<pre><code>//Dans App.js
+import React, { useState } from &quot;react&quot;;
+import { Text, View, StyleSheet, TextInput } from &quot;react-native&quot;;
+
+const App = () =&gt; {
+  const [state, setState] = useState(&quot;&quot;);
+  return (
+    &lt;View style={styles.container}&gt;
+      &lt;Text style={styles.text}&gt;Bonjour Monsieur&lt;/Text&gt;
+      &lt;TextInput
+        style={styles.input}
+        placeholder=&quot;Saisir du texte&quot;
+        value={state}
+        onChangeText={(value) =&gt; setState(value)}
+      /&gt;
+    &lt;/View&gt;
+  );
+};
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    borderWidth: 1,
+    flexDirection: &quot;column&quot;,
+    height: &quot;100%&quot;,
+    width: &quot;100%&quot;,
+    backgroundColor: &quot;green&quot;,
+    justifyContent: &quot;center&quot;,
+    alignItems: &quot;center&quot;,
+  },
+  text: {
+    color: &quot;white&quot;,
+    fontSize: 20,
+    fontWeight: &quot;bold&quot;,
+    paddingBottom: 20,
+  },
+  input: {
+    borderWidth: 1,
+    height: 30,
+    width: 300,
+    fontSize: 25,
+    color: &quot;black&quot;,
+  },
+});
+export default App;
+
+</code></pre>
+<h4 id="props-et-state">Props  et State</h4>
+<p>Parlons des state et de props:
+Les props nous permettent de contrôler un component,
+En langage plus technique, ils sont accessibles en lecture uniquement par le component fils.</p>
+<div class="warning">
+Attention,ne pensez pas que les props d'un component ne peuvent pas changer. <br>Elles le peuvent ; simplement, c'est le component parent qui va les changer.
+</div>
+<p>C'est là qu'intervient <strong>"state"</strong> il nous permet de récuperer les nouvelles données avec setState et indiquer à React que le component a besoin d'être re-rendu avec ces  nouvelles données.</p>
+<pre><code>const [tasks, setTask] = useState([
+  { title: &quot;Nouvelle tache&quot;, completed: false },
+]);
+
+</code></pre>
+<div class="info">Le state et les props gèrent les données de vos components.</div>
+
+<h3 id="5-le-composant-image">5- Le composant Image</h3>
+<h5 id="soit-from-assets">Soit from assets:</h5>
+<p>importer d'abord l'image</p>
+<pre><code>
+import LOGO from &quot;./assets/imgs.png&quot;;
+
+</code></pre>
+<p>puis on lui met du css</p>
+<pre><code>
+logo: {
+  width: 66,
+  height: 58,
+  margin: 10,
+},
+
+</code></pre>
+<p>Enfin on met l'image dans une vue</p>
+<pre><code>
+&lt;View style={styles.containerIm}&gt;
+  &lt;Image style={styles.logo} source={LOGO} /&gt;
+
+&lt;/View&gt;
+</code></pre>
+<h5 id="soit-from-une-url">soit from une URL:</h5>
+<pre><code>&lt;View style={styles.containerIm}&gt;
+  &lt;Image style={styles.logo} source={{uri: &quot;https://reactnative.dev/img/tiny_logo.png&quot;}} /&gt;
+
+&lt;/View&gt;
+</code></pre>
+<h3 id="6-le-composant-scrollview">6- Le composant ScrollView</h3>
+<p>Il permet de faire defiler notre écran quand on aura beaucoup d'éléments à afficher.</p>
+<h3 id="7-le-composant-flatlist">7- Le composant FlatList</h3>
+<p>FlatList fait en sorte que lorsque nos informations sont sur le point d'apparaître, il supprime les éléments qui défilent hors de l'écran pour économiser de la mémoire et du temps de traitement.  </p>
+<p>Egalement si vous voulez afficher des séparateurs entre vos éléments, plusieurs colonnes, un chargement de défilement infini ou tout autre nombre d'autres fonctionnalités qu'il prend en charge immédiatement. </p>
+<p>Code source: <a  style="text-decoration: underline; color:black" href="https://github.com/debrouillonsnous/React-native/tree/main"> 👉here</a></p>
+<hr />
+<h2 id="navigation">Navigation</h2>
+<hr />
+<h3 id="installation">Installation​</h3>
+<p>Installons les packqges dont ont a besoin dans le projet</p>
+<pre><code>sudo npm install @react-navigation/native
+</code></pre>
+<pre><code>sudo expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+</code></pre>
+<pre><code>sudo npm install @react-navigation/stack
+</code></pre>
+<hr />
+<p><strong>Sources:</strong></p>
+<p><a  style="text-decoration: underline; color:black"  href="https://openclassrooms.com/fr/courses/4902061-developpez-une-application-mobile-react-native/4915721-manipulez-le-state">openClassRooms</a></p>
+<p><a  style="text-decoration: underline; color:black"  href="https://reactnative.dev/docs/getting-started">React native doc</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../python-functions/" class="btn btn-neutral float-left" title="Python fonctions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../tests/" class="btn btn-neutral float-right" title="Tests logiciels">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../python-functions/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../tests/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

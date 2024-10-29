@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Github-actions - SoowCode</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Github-actions";
+        var mkdocs_page_input_path = "github-actions.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> SoowCode
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">About US</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../MQTT/">MQTT</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ubuntu-Oh-my-zsh/">Oh My Zsh</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ubuntu-commandes/">Ubuntu utilities</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../alerte_manager/">Alerte manager</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../apache-benchmark/">ApacheBench</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../callback-function/">Fonction callback ou anonyme</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cockpit/">Cockpit</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docker-/">Docker</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docker-mysql/">Docker-MySQL</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docker-registry/">Docker Registry</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../git-commands-utils/">Git Delete 😇</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Github-actions</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#fonctionnement">Fonctionnement</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#exemple-de-gitflow">Exemple de gitflow</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#explications">Explications</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#conclusion">Conclusion</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../gitlab_ci/">Gitlab-ci</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../good-to-know/">Good to know</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../happy-path-and-edge-cases/">Happy path and edge cases</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../npm-vs-npx/">Npm vs npx</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python-/">Python installation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python-commandes/">Python commandes utiles</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python-functions/">Python fonctions</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../react-native/">React Native</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../tests/">Tests logiciels</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Js</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../js/js/">Javascript</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">SoowCode</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Github-actions</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="github-actions">Github-actions</h1>
+<h2 id="introduction">Introduction</h2>
+<p><img src="../../img/gitflow.png" /> <br>
+Il est indispensable de développer des logiciels sans les pipelines CI/CD.</p>
+<p>Les plates-formes CI/CD sont des systèmes de contrôles phénoménaux. Il ne demande pas beaucoup de configurations et est super-amazing !</p>
+<p>En entreprise, j'utilise Gitlab-ci et j'apprends Jenkins, mais j'utilise pour mes projets personnels github, alors je me suis dit si je peux avoir des pipelines sur Gitlab why not sur github .</p>
+<p>Ainsi, je me suis mis à la recherche d'une chose qui remplace les pipelines de gitlab en quelque chose sur github et boum je suis tombée sur Github-actions.</p>
+<p>Dans ce tutoriel, je ne me mettrais surtout pas à comparer les CI/CD tools, mais expliqué mon aventure avec github-actions.</p>
+<h2 id="fonctionnement">Fonctionnement</h2>
+<p>Il faut savoir que toutes les actions de GitHub commencent par un événements. Les événements sont les déclencheurs (triggers) qui indiquent à GitHub d'exécuter des actions configurées.
+Pour voir la liste des évenements déclencheurs je vous invite sur 
+<a style="text-decoration: underline; color:black" href="https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads">Ici une github-events.</a></p>
+<ul>
+<li><code>Push</code> éclenche quand un utilisateur pousse dans une branche</li>
+<li><code>Pull_request</code> Se déclenche lorsqu'une pull_request est reçue sur le répository.</li>
+<li><code>Fork</code> Déclenche quand le dépôt est forked.</li>
+<li><code>Issues</code> Se déclenche quand une issue est modifiée.</li>
+<li><code>Release</code> Se déclenche quand une version du dépôt est créée.</li>
+</ul>
+<h3 id="exemple-de-gitflow">Exemple de gitflow</h3>
+<pre><code class="language-yml">name: CI/CD
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [master]
+# Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+ # This workflow contains a single job called &quot;deploy&quot;
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: printenv
+      - uses: actions/checkout@v2
+      - run: echo &quot;🎉 The job was successful.&quot;
+
+</code></pre>
+<h3 id="explications">Explications</h3>
+<p><strong>L'attribut name</strong>  </p>
+<pre><code class="language-yml">name: CI/CD
+</code></pre>
+<p>La section name constitue le nom de votre workflow et sera le nom affiché ici à gauche.
+<br></p>
+<div style="text-align:center">
+    <img src="../../img/workflow.png"/><br>
+</div>
+<p><br></p>
+<p><strong>L'attribut on</strong> </p>
+<pre><code class="language-yml">
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [master]
+</code></pre>
+<p>Le <code>on</code> déclenche le workflow sur les événements push ou pull request mais uniquement pour la branche <code>master</code>.</p>
+<p><strong>L'attribut workflow_dispatch</strong> </p>
+<pre><code class="language-yml"># Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+</code></pre>
+<p>le <code>workflow_dispatch</code> permet d'exécuter ce workflow manuellement à partir de l'onglet 
+"Actions".
+<br></p>
+<div style="text-align:center">
+    <img src="../../img/jobs.png"/><br>
+</div>
+<p><br></p>
+<p><strong>L'attribut jobs</strong> </p>
+<pre><code class="language-yml">jobs:
+ # This workflow contains a single job called &quot;deploy&quot;
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: printenv
+      - uses: actions/checkout@v2
+      - run: echo &quot;🎉 The job was successful.&quot;
+</code></pre>
+<p>Ce workflow contient un seul job appelé <code>deploy</code>  qui 
+- run: <code>pritenv</code>affiche les variables d'env
+- uses: <code>actions/checkout@v2</code> 
+cette action vérifie le repository sous $GITHUB_WORKSPACE, afin que le workflow puisse y accéder.
+- run: <code>echo "🎉 The job was successful."</code> affiche ce message à la fin.
+<br></p>
+<div style="text-align:center">
+    <img src="../../img/deploy-job.png"/><br>
+</div>
+<p><br>
+<br></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Ce tutoriel était une brève introduction à github-actions.</p>
+<p>Pour plus d'informations visitez le  <a style="text-decoration: underline; color:black" href="https://docs.github.com/en/actions/quickstart">site github actions.</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../git-commands-utils/" class="btn btn-neutral float-left" title="Git Delete 😇"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../gitlab_ci/" class="btn btn-neutral float-right" title="Gitlab-ci">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../git-commands-utils/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../gitlab_ci/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

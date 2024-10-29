@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Python fonctions - SoowCode</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Python fonctions";
+        var mkdocs_page_input_path = "python-functions.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> SoowCode
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">About US</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../MQTT/">MQTT</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ubuntu-Oh-my-zsh/">Oh My Zsh</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ubuntu-commandes/">Ubuntu utilities</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../alerte_manager/">Alerte manager</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../apache-benchmark/">ApacheBench</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../callback-function/">Fonction callback ou anonyme</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cockpit/">Cockpit</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docker-/">Docker</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docker-mysql/">Docker-MySQL</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docker-registry/">Docker Registry</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../git-commands-utils/">Git Delete 😇</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../github-actions/">Github-actions</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../gitlab_ci/">Gitlab-ci</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../good-to-know/">Good to know</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../happy-path-and-edge-cases/">Happy path and edge cases</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../npm-vs-npx/">Npm vs npx</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python-/">Python installation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python-commandes/">Python commandes utiles</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Python fonctions</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#syntaxe-de-base">Syntaxe de base</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#fonctionnement">Fonctionnement</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#exemple">Exemple</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#appel-de-fonction">Appel de fonction</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#valeurs-par-defaut-des-parametres">Valeurs par défaut des paramètres</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#nombre-variable-de-parametres">Nombre variable de paramètres</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#conclusion">Conclusion</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../react-native/">React Native</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../tests/">Tests logiciels</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Js</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../js/js/">Javascript</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">SoowCode</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Python fonctions</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="python-fonctions">Python fonctions</h1>
+<div style="text-align:center">
+    <img src="../../img/python.gif" alt="drawing" style="width:40%; height:40%; "/> <br>
+    Les fonctions !!! &#128512;!! <br>
+</div>
+<p><br></p>
+<h2 id="introduction">Introduction</h2>
+<p>Les fonctions en Python sont des blocs de code réutilisables qui permettent d'organiser et de structurer un programme. Elles simplifient la gestion de tâches spécifiques en les encapsulant dans des unités logiques. La définition d'une fonction se fait à l'aide du mot-clé <code>def</code>, suivi du nom de la fonction et de ses paramètres. Dans cette section, nous explorerons la syntaxe de base d'une fonction en Python.</p>
+<h2 id="syntaxe-de-base">Syntaxe de base</h2>
+<pre><code class="language-python">def nom_de_la_fonction(parametre1, parametre2, ...):
+    &quot;&quot;&quot;
+    Documentation de la fonction (docstring)
+    &quot;&quot;&quot;
+    # Code de la fonction
+    # ...
+    return resultat
+</code></pre>
+<ul>
+<li><code>def</code>: Mot-clé pour définir une fonction.</li>
+<li><code>nom_de_la_fonction</code>: Identificateur de la fonction.</li>
+<li><code>(parametre1, parametre2, ...)</code>: Liste des paramètres d'entrée.</li>
+<li><code>:</code>: Marque le début du bloc de code de la fonction.</li>
+<li><code>"""Documentation de la fonction"""</code>: Docstring pour documenter la fonction.</li>
+<li><code>return resultat</code>: Instruction pour renvoyer une valeur en sortie.</li>
+</ul>
+<h2 id="fonctionnement">Fonctionnement</h2>
+<p>Une fois une fonction définie, elle peut être appelée en fournissant les valeurs nécessaires aux paramètres. Le bloc de code à l'intérieur de la fonction s'exécute, effectuant la tâche spécifique définie. Les fonctions peuvent également avoir des paramètres avec des valeurs par défaut, ce qui simplifie l'appel de la fonction avec moins de paramètres.</p>
+<h3 id="exemple">Exemple</h3>
+<pre><code class="language-python">def addition(a, b):
+    &quot;&quot;&quot;
+    Cette fonction prend deux nombres en entrée et renvoie leur somme.
+    &quot;&quot;&quot;
+    resultat = a + b
+    return resultat
+</code></pre>
+<h3 id="appel-de-fonction">Appel de fonction</h3>
+<pre><code class="language-python">resultat_addition = addition(3, 5)
+print(resultat_addition)  # Affiche 8
+</code></pre>
+<h3 id="valeurs-par-defaut-des-parametres">Valeurs par défaut des paramètres</h3>
+<pre><code class="language-python">def multiplication(x, y=2):
+    &quot;&quot;&quot;
+    Cette fonction multiplie deux nombres, le deuxième paramètre a une valeur par défaut de 2.
+    &quot;&quot;&quot;
+    resultat = x * y
+    return resultat
+</code></pre>
+<pre><code class="language-python">resultat_multiplication = multiplication(4)
+print(resultat_multiplication)  # Affiche 8
+</code></pre>
+<h3 id="nombre-variable-de-parametres">Nombre variable de paramètres</h3>
+<pre><code class="language-python">def somme_variable(*args):
+    &quot;&quot;&quot;
+    Cette fonction prend un nombre variable d'arguments et renvoie leur somme.
+    &quot;&quot;&quot;
+    resultat = sum(args)
+    return resultat
+</code></pre>
+<pre><code class="language-python">print(somme_variable(1, 2, 3))          # Affiche 6
+print(somme_variable(1, 2, 3, 4, 5))     # Affiche 15
+</code></pre>
+<h2 id="conclusion">Conclusion</h2>
+<div style="text-align:center">
+<img src="../../img/done.gif" alt="drawing" style="width:30%; height:30%"/> 
+</div>
+
+<p>Les fonctions sont un élément essentiel de la programmation en Python. Elles favorisent la réutilisabilité du code, la modularité et une meilleure organisation du programme. En documentant vos fonctions à l'aide de docstrings, vous facilitez la compréhension du code pour vous-même et pour d'autres développeurs. Les paramètres par défaut et le nombre variable de paramètres offrent une flexibilité accrue lors de la conception de fonctions. En intégrant judicieusement les fonctions dans votre code, vous contribuerez à créer des programmes plus clairs, plus efficaces et plus faciles à maintenir.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../python-commandes/" class="btn btn-neutral float-left" title="Python commandes utiles"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../react-native/" class="btn btn-neutral float-right" title="React Native">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../python-commandes/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../react-native/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

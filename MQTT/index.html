@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>MQTT - SoowCode</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "MQTT";
+        var mkdocs_page_input_path = "MQTT.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> SoowCode
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">About US</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">MQTT</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#fonctionnement">Fonctionnement</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#cest-quoi-un-broker-mqtt">C’est quoi un broker MQTT ?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#installer-mosquitto-sur-linux-ou-raspberry-pi">Installer Mosquitto sur Linux ou Raspberry Pi</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#installer-mosquitto-sur-windows-ou-macos">Installer Mosquitto sur Windows ou macOS</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#securise-mosquitto">Sécurisé Mosquitto</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#publier-envoyer-un-message-mqtt-depuis-le-terminal">Publier (envoyer) un message MQTT depuis le terminal</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#recevoir-souscrire-des-messages">Recevoir (souscrire) des messages</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#conclusion">Conclusion</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ubuntu-Oh-my-zsh/">Oh My Zsh</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ubuntu-commandes/">Ubuntu utilities</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../alerte_manager/">Alerte manager</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../apache-benchmark/">ApacheBench</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../callback-function/">Fonction callback ou anonyme</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../cockpit/">Cockpit</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docker-/">Docker</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docker-mysql/">Docker-MySQL</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../docker-registry/">Docker Registry</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../git-commands-utils/">Git Delete 😇</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../github-actions/">Github-actions</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../gitlab_ci/">Gitlab-ci</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../good-to-know/">Good to know</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../happy-path-and-edge-cases/">Happy path and edge cases</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../npm-vs-npx/">Npm vs npx</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python-/">Python installation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python-commandes/">Python commandes utiles</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python-functions/">Python fonctions</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../react-native/">React Native</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../tests/">Tests logiciels</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Js</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../js/js/">Javascript</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">SoowCode</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">MQTT</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="mqtt">MQTT</h1>
+<p><img alt="Screenshot-from-2021-11-17-17-02-57" src="https://thanos.savoirguinee.com/content/images/2021/11/Screenshot-from-2021-11-17-17-02-57.png" /></p>
+<h2 id="introduction">Introduction</h2>
+<p>Utilisé pour le transfert de <strong>Machine-to-Machine (M2M)</strong>, MQTT est considéré comme l'un des principaux protocoles de messagerie de l'internet des objets, mais côté industriel (<strong>IoT)</strong>. Il est open source, léger (<strong>en tête de messages de 2 octets</strong>), faible utilisation de la bande passante du réseau (<strong>93 fois plus rapides que le HTTP</strong>), faible consommation d'énergie (<strong>11 fois moins pour envoyer et 170 pour ne recevoir que le HTTP</strong>) et fiable (mécanisme natif de Qos, acronyme de Quality of Service).</p>
+<p>Son autre avantage, c'est qu'il est extrêmement facile à mettre en œuvre du côté client. C'est donc la solution parfaite pour l'IoT.</p>
+<p>Attention cependant, fortement vulnérable si certaines conditions de sécurité ne sont pas réunies, comme l'absence de chiffrage sur la transmission &amp; l'authentification (MQTT est capable d'être déployé sans chiffrement TLS ou SSL.)</p>
+<p>Utilisé par nombreux acteurs dans le monde Facebook, openstack, geospatial, Bosh, IBM, Adarfuit, EVERYTHING IoT, Google Home Assistant, Pimatic, MS Azure, certains systèmes de signalisation, systèmes d'alarme, l'industrie du Gaz, de l'électricité et bien plus encore. </p>
+<p>MQTT focntionne sur le principe de <strong>publication/abonnement</strong>(publish/subscribe)</p>
+<h2 id="fonctionnement">Fonctionnement</h2>
+<h3 id="cest-quoi-un-broker-mqtt">C’est quoi un broker MQTT ?</h3>
+<p>Vous pouvez envoyer une commande pour contrôler une sortie ou vous pouvez la lire à partir d'un capteur et la publier.
+Dans Mqtt, il y a quelques concepts de base que vous devez comprendre : publier et souscrire des messages, des topics et des broker.
+Le premier concept est le système de publication et d'abonnement.</p>
+<p>Qu'est-ce que cela signifie ? Cela signifie que le dispositif peut publier des messages à vos autres dispositifs ou votre dispositif peut s'abonner à un sujet particulier.Pour recevoir ces messages, par exemple, le <em>dispositif 1</em> publie sur un sujet, le <em>dispositif 2</em> s'abonne au même sujet que le <em>dispositif 1</em> publie. Ainsi, le <em>dispositif 2</em> reçoit le message.
+<img alt="subpub6" src="https://thanos.savoirguinee.com/content/images/2021/11/subpub6.png" /></p>
+<p>Les messages sont les informations que vous souhaitez échanger entre vos appareils, qu'il s'agisse d'une commande ou de données avec le système de publication/abonnement.
+Vous pouvez faire à peu près tout ce que vous voulez dans vos projets de mission en mode autonome.
+<img alt="animation_300_kw504ekk" src="https://thanos.savoirguinee.com/content/images/2021/11/animation_300_kw504ekk.gif" /></p>
+<p>Un autre concept important est celui des topics. Les topics sont la façon dont vous enregistrez l'intérêt pour les messages entrants ou je vais spécifier où vous voulez publier votre message.
+votre message. 
+Les topics sont représentés par des chaînes de caractères séparées par des barres obliques. Les slashs indiquent le niveau du sujet, voici un exemple
+si vous créez maintenant un sujet pour une lampe dans votre propre bureau (home/office/lamp).</p>
+<p>Par exemple, si vous souhaitez allumer votre lampe dans votre bureau à la maison, vous publieriez un message dans un topic en utilisant node-red disant on et votre machine sera abonnée à ce même sujet.</p>
+<p>Elle recevra donc le message on et allumera finalement la lampe.
+<img alt="Screenshot-from-2021-11-17-13-43-09" src="https://thanos.savoirguinee.com/content/images/2021/11/Screenshot-from-2021-11-17-13-43-09.png" /></p>
+<p><code>Les topics sont sensibles à la casse :</code> Ce qui fait que home/office/lamp et home/office/Lamp sont différents.</p>
+<p><strong>Faites attention au terme borker</strong> : le broker est principalement responsable de la réception de tous les messages.
+Le broker MQTT est un equipement intermediaire entre le publisher et l'abonée, il filtre les messages pour décider qui est intéressé et publie ensuite le message aux clients abonnés.
+Il y a plusieurs brokers que vous pouvez utiliser.</p>
+<p>Nous allons utiliser le broker mosquito que vous installerez sur votre raspberry pi.</p>
+<h3 id="installer-mosquitto-sur-linux-ou-raspberry-pi">Installer Mosquitto sur Linux ou Raspberry Pi</h3>
+<p>D'abord mettons à jour notre système avant d’installer Mosquito ce n'est pas obligatoire mais recommandé.</p>
+<pre><code>sudo apt update &amp;&amp; apt upgrade
+</code></pre>
+<p>Maintenant installons Mosquitto</p>
+<pre><code>sudo apt install mosquitto
+</code></pre>
+<p>Pour faire des tests il faut installer Mosquitto client</p>
+<pre><code>sudo apt-get install mosquitto-clients
+</code></pre>
+<p>Ici nos tests se baseront justes sur Lunix, si jamais vous voulez installer Mosquito pour <strong><em>Rasperry Pi</em></strong>, installer mosquitto_sub, mosquitto_pub et mosquitto_passwVous voulez faire du mosquito en python? Alors je vous conseille  python-mosquitto
+<strong>Exemple</strong> de server pour vos test: <a href="https://test.mosquitto.org/">Server de test</a>
+Pour verifier l'insatllation </p>
+<pre><code>systemctl status mosquitto
+</code></pre>
+<h3 id="installer-mosquitto-sur-windows-ou-macos">Installer Mosquitto sur Windows ou macOS</h3>
+<p>Pour Windows ou macos je vous recommande de télécharger et installer via ce <a href="https://mosquitto.org/download/">lien</a></p>
+<h3 id="securise-mosquitto">Sécurisé Mosquitto</h3>
+<p>Maintenant on a Mosquitto qui fonctionne bien sur notre machine.
+Mais pas sécurisé, maintenant sécurisons le! Creons un user avec un password
+Pour cela tapez</p>
+<pre><code>cd /etc/mosquitto
+</code></pre>
+<p>Vous n'avez pas besoin de vous identifier tant que vous ne faite pas une gestion de votre domotique DIY car pour la domotique vous serez    amené à sécuriser vos appareils car sinon tout le monde peut accéder à appareils(chauffage, climatisation, motorisation de volets roulants.....).</p>
+<p>Donc le mieux c'est de les protéger avec un mot de passe.</p>
+<pre><code>sudo mosquitto_passwd -c /etc/mosquitto/passwd USER_NAME
+
+</code></pre>
+<p>Afin de limiter l'accès aux utilisateurs à un compte, modifiez le fichier de configuration. 
+Pour cela tapez la commande:</p>
+<pre><code>sudo /etc/mosquitto/mosquitto.conf
+</code></pre>
+<p>Ajoutez ceci à la fin du fichier </p>
+<pre><code>allow_anonymous false
+password_file /etc/mosquitto/passwordfile
+</code></pre>
+<p>Maintenant on redemarre Mosquitto</p>
+<pre><code>systemctl restart mosquitto
+</code></pre>
+<p><img alt="systemctl" src="https://thanos.savoirguinee.com/content/images/2021/11/systemctl.png" /></p>
+<h3 id="publier-envoyer-un-message-mqtt-depuis-le-terminal">Publier (envoyer) un message MQTT depuis le terminal</h3>
+<p>Pour publier un message on utilise la commande mosquitto_pub et pour connaitre les options liées à la commande on utilise mosquitto_pub -help</p>
+<p>-h  spcifie le nom du broker sur le quel on se connecte (ou IP)
+-t  spcifie le topic sur lequel le message est publié 
+-P  spcifie le mot de passe (optionnel)
+-m  spcifie le message à envoyer qui peut être une valeur ou un JSON.
+-u  spcifie le nom d’utilisateur (optionnel)
+-p  spcifie le port, qui par défaut est 1883
+Pour plus d'information voir <a href="https://mosquitto.org/man/mosquitto_pub-1.html">documentation</a></p>
+<p><strong>Exemple</strong>: on se connecte au serveur -h localhost sur le Topic -t news/football et on publie le message -m j'ai gagné le ballon d'or.</p>
+<pre><code>mosquitto_pub -h localhost -t news/football -m &quot;jai gagné le ballon d'or!&quot;
+</code></pre>
+<h3 id="recevoir-souscrire-des-messages">Recevoir (souscrire) des messages</h3>
+<p>Pour recevoir un message on utilise la commande mosquitto_sub et pour connaitre les options liées à la commande on utilise mosquitto_sub -help
+Ouvrez un  second Terminal et exécutez la commande suivant.</p>
+<pre><code>mosquitto_sub -h localhost -t news/football
+</code></pre>
+<p>Exemple d'échange: à gauche le publisher et à droite le subscriber
+<img alt="Peek-2021-11-17-15-39" src="https://thanos.savoirguinee.com/content/images/2021/11/Peek-2021-11-17-15-39.gif" /></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Dans ce tutoriel nous avons parlé des avantages et inconvénients de MQTT.
+Nous avons installé et testé MQTT en utilisant le serveur mosquito sur Lunix.
+Pour ceux qui ont Windows ou macos nous les avons redirigé vers la documentation de Mosquito.
+Rappelons que MQTT est un protocole TCP/IP utilisé beaucoup dans l'IoT industriel.Il est le protocole parfait pour votre domotique et est super bien adapté au développement d’objets connectés vus sa rapidité et sa lergerté.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="About US"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Ubuntu-Oh-my-zsh/" class="btn btn-neutral float-right" title="Oh My Zsh">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Ubuntu-Oh-my-zsh/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
