@@ -2,6 +2,9 @@
 title: Docker
 position: 1
 ---
+
+
+# Introduction à Docker
 <div style="text-align:center">
 <img src="../../img/docker.gif" alt="drawing" style="width:45%; height:45%"/>
 </div>
@@ -111,7 +114,7 @@ Pour savoir tout ce qu'on peut faire avec les volumes taper la commande ` docker
 </div>
 
 
-### Dockerfile
+## Dockerfile
 
 Ce fichier permet de créer une image custom, au lieu de le faire en ligne de commande, on peut le faire dans un fichier dont la maintenance est facile.
 
@@ -128,9 +131,9 @@ COPY . .
 CMD ["flask", "run"]
 ```
 
-### Docker-compose
+## Docker-compose
 
-#### Installation
+### Installation
 
 Vous trouverez ici tout ce qu'il vous faut sur <a style="text-decoration: underline; color:black" href="https://docs.docker.com/compose/gettingstarted/"> Docker-compose </a>
 
@@ -144,7 +147,7 @@ Appliquez les autorisations exécutables au binaire <a style="text-decoration: u
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-#### Utilisation
+### Utilisation
 
 Rappelons que ce fichier contient le docker run commande
 
