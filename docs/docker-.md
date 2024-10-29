@@ -2,9 +2,6 @@
 title: Docker
 position: 1
 ---
-# Introduction
- 
-Un peu d'explication :)
 <div style="text-align:center">
 <img src="../../img/docker.gif" alt="drawing" style="width:45%; height:45%"/>
 </div>
