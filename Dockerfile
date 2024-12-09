@@ -1,4 +1,4 @@
-FROM python:3.10-alpine3.17 as build
+FROM python:3.13.0a2-alpine3.17 as build
 
 WORKDIR /data
 
@@ -9,7 +9,7 @@ RUN mkdocs build
 
 
 
-FROM python:3.10-alpine3.17
+FROM python:3.13.0a2-alpine3.17
 
 WORKDIR /data
 COPY --from=build /data/site /data/site 
